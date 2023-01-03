@@ -10,11 +10,6 @@
 
 Simulation de passage de douane dans un aéroport avec différents agents.
 
-## Les Agents
-
-- Douaniers
-- Clients
-
 ## Outils à approfondir par personne
 
 - BALLEJOS Lilian: **GitLabCI** (intégration continue)
@@ -23,8 +18,18 @@ Simulation de passage de douane dans un aéroport avec différents agents.
 
 ## Travail à faire
 
-[] UML
+[] Gant prévisionel
 
-[] Gant
+[] UML: USE CASE
+
+[] UML: Diagramme de classe d'analyse
+
+[] Explication du contexte
+
+[] Explication langage
+
+
+
+
 
 
