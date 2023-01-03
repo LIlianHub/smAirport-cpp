@@ -24,5 +24,7 @@ Simulation de passage de douane dans un aéroport avec différents agents.
 ## Travail à faire
 
 [] UML
+
 [] Gant
-[X] Test
+
+
