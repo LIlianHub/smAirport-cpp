@@ -18,15 +18,7 @@ Simulation de passage de douane dans un aéroport avec différents agents.
 
 ## Travail à faire
 
-[] Gant prévisionel
-
-[] UML: USE CASE
-
-[] UML: Diagramme de classe d'analyse
-
-[] Explication du contexte
-
-[] Explication langage
+[ ] Dossier de projet (Rendu 1)
 
 
 
