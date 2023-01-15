@@ -139,7 +139,7 @@
 \renewcommand{\contentsname}{Sommaire}
 \normalsize\tableofcontents %place la table des matières
 
-\vspace{2cm}
+\bigskip
 
 \section{Introduction}
 
@@ -149,7 +149,19 @@ Nous allons vous présenter aujourd'hui dans ce dossier les prémices de notre f
 
 Il s'agit d'une simulation qui sera composé de douanier et de client lambda qui interagiront les uns avec les autres dans un aéroport.
 
-\newpage
+\bigskip
+
+ Nous nous concentrerons sur les différents checks que les clients doivent passer, notamment les files d'attente, les fouilles de sécurité et la récupération des bagages. Nous allons également prendre en compte les actions possibles pour les différents agents, comme les douaniers qui peuvent fouiller les clients et les arrêter s'ils ne sont pas en règle. L'objectif de ce projet est d'analyser les différents processus et les interactions entre les agents pour comprendre comment ils contribuent au bon fonctionnement de l'aéroport
+ 
+ \bigskip
+ 
+ \textbf{Remarque:}
+ 
+
+Notre projet sera disponible sur le Gitlab de l'ISIMA INP en protection \textit{internal} ce qui signifie que pour y accéder il faut être connecté à celui-ci.
+
+Retrouver notre projet en suivant ce lien: \href{https://gitlab.isima.fr/liballejos/smairport}{ici}
+
 
 \section{Choix du langage}
 
@@ -163,11 +175,32 @@ Nous avons décidé de coder ce programme en \textbf{C++} pour deux raisons:
 	\item Cela nous permettra de nous améliorer dans ce langage que nous étudions en ce moment en cours et sur lequel nous serons évalués.
 \end{itemize}
 
+\newpage
+
+
 \section{Objectifs}
+
+Nous sommes dans la zone d'entrée d'un aéroport.
+
+L'agent "Client" se déplace entre les différentes parties de l'aéroport et interagit avec celles-ci .
+
+L'agent douanier lui interagit avec les clients en les fouillant et les arrêtes si ceux-ci ne sont pas en règle.
 
 \section{Conception du programme}
 
+\subsection{Théorie}
+
+Il nous faut deux agents:
+
+\begin{itemize}
+	\item Le visiteur: représente le client, il se déplace dans les différentes parties de l'aéroport et interagi avec
+	
+	\item Le douanier: ll se déplace aussi entre les différentes parties de l'aéroport mais lui va arrêter les clients pour les contrôler
+\end{itemize}
+
 \subsection{Diagramme de cas d'utilisation}
+
+Voici un diagramme de cas d'utilisation qui représente notre futur simulation.
 
 \begin{figure}[H]
 	\centering
@@ -177,7 +210,16 @@ Nous avons décidé de coder ce programme en \textbf{C++} pour deux raisons:
 
 \section{Analyse du programme}
 
+\subsection{Analyse}
+
+Nos deux types d'agents seront tous des personnes.
+
+L'aéroport est composés de différents éléments qui le \textbf{compose} comme la zone d'embarquement, la boutique et la zone de bagages
+
+
 \subsection{Diagramme de classe d'analyse}
+
+Voici un diagramme de classe d'analyse qui réparti les définis les différentes éléments de notre futur simulation.
 
 \begin{figure}[H]
 	\centering
@@ -187,15 +229,60 @@ Nous avons décidé de coder ce programme en \textbf{C++} pour deux raisons:
 
 \section{Planification des tâches}
 
+Nous nous sommes réparties temporellement les différentes tâches à faire et l'avons représenté visuellement à l'aide d'un Gantt.
+
 \subsection{Gantt}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.38]{gantt.png}
+	\includegraphics[scale=0.35]{gantt.png}
 	\caption{Gantt prévisionnel}    
 \end{figure}
 
+\bigskip
+
+Ce Gantt vous sera aussi fourni à côté du rapport car il n'est pas parfaitement lisible incrusté ici dans le pdf.
+
+\section{Les spécialisations pour chaque membre du binôme}
+
+Nous avons tous choisis une spécialité à approfondir durant ce sujet de TP afin de nous améliorer dans un domaine.
+
+\subsection{Choix de BALLEJOS Lilian}
+
+Lilian se spécialisera dans l'intégration continue avec l'outil GitlabCI.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{clilian.png}
+	\caption{GitlabCI}    
+\end{figure}
+
+
+
+\subsection{Choix de CHARPIN Etienne}
+
+Etienne se spécialisera dans l'étude des performances à l'aide de l'outil SonarQube.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{cetienne.png}
+	\caption{SonarQube}    
+\end{figure}
+
+
+\subsection{Choix de DENIZOT Hugo}
+
+Hugo se spécialisera dans la production de documentation à l'aide de l'outil Doxygen.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.35]{chugo.png}
+	\caption{Doxygen}    
+\end{figure}
+
+
 \newpage
+
 
 \listoffigures
 

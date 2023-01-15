@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.1.13)  13 JAN 2023 11:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.1.13)  15 JAN 2023 12:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -576,17 +576,17 @@ LaTeX Info: Redefining \nameref on input line 78.
 LaTeX Info: Redefining \degres on input line 78.
 LaTeX Info: Redefining \up on input line 78.
 \c@lstlisting=\count313
-<isima.png, id=40, 222.8325pt x 133.49875pt>
+<isima.png, id=64, 222.8325pt x 133.49875pt>
 File: isima.png Graphic file (type png)
 <use isima.png>
 Package pdftex.def Info: isima.png  used on input line 83.
 (pdftex.def)             Requested size: 133.70053pt x 80.09984pt.
-<deco.jpg, id=41, 662.475pt x 496.85625pt>
+<deco.jpg, id=65, 662.475pt x 496.85625pt>
 File: deco.jpg Graphic file (type jpg)
 <use deco.jpg>
 Package pdftex.def Info: deco.jpg  used on input line 85.
 (pdftex.def)             Requested size: 132.49265pt x 99.36948pt.
-<garde.png, id=42, 1204.5pt x 313.9228pt>
+<garde.png, id=66, 1204.5pt x 313.9228pt>
 File: garde.png Graphic file (type png)
 <use garde.png>
 Package pdftex.def Info: garde.png  used on input line 111.
@@ -638,10 +638,10 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write4
 \openout4 = `rapport.toc'.
 
-<header.png, id=63, 222.8325pt x 133.49875pt>
+<header.png, id=94, 222.8325pt x 133.49875pt>
 File: header.png Graphic file (type png)
 <use header.png>
-Package pdftex.def Info: header.png  used on input line 152.
+Package pdftex.def Info: header.png  used on input line 178.
 (pdftex.def)             Requested size: 62.39267pt x 37.37938pt.
 
 
@@ -656,27 +656,18 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.152 \newpage
+l.178 \newpage
                [1 <./header.png>]
-<usecase.png, id=70, 1118.1775pt x 900.36375pt>
+<usecase.png, id=102, 1118.1775pt x 900.36375pt>
 File: usecase.png Graphic file (type png)
 <use usecase.png>
-Package pdftex.def Info: usecase.png  used on input line 174.
+Package pdftex.def Info: usecase.png  used on input line 207.
 (pdftex.def)             Requested size: 447.26308pt x 360.13911pt.
-<analyse.png, id=72, 1299.85625pt x 594.22pt>
-File: analyse.png Graphic file (type png)
-<use analyse.png>
-Package pdftex.def Info: analyse.png  used on input line 184.
-(pdftex.def)             Requested size: 519.93329pt x 237.68379pt.
-
-Overfull \hbox (36.23642pt too wide) in paragraph at lines 184--185
- [][] 
- []
-
 File: header.png Graphic file (type png)
 <use header.png>
-Package pdftex.def Info: header.png  used on input line 187.
+Package pdftex.def Info: header.png  used on input line 217.
 (pdftex.def)             Requested size: 62.39267pt x 37.37938pt.
+
 
 Package fancyhdr Warning: \headheight is too small (31.0pt): 
 (fancyhdr)                Make it at least 41.72942pt, for example:
@@ -686,19 +677,24 @@ Package fancyhdr Warning: \headheight is too small (31.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-10.72942pt}.
 
 [2 <./usecase.png>]
-<gantt.png, id=81, 1371.62437pt x 246.1697pt>
-File: gantt.png Graphic file (type png)
-<use gantt.png>
-Package pdftex.def Info: gantt.png  used on input line 194.
-(pdftex.def)             Requested size: 521.22269pt x 93.54544pt.
+<analyse.png, id=112, 1299.85625pt x 594.22pt>
+File: analyse.png Graphic file (type png)
+<use analyse.png>
+Package pdftex.def Info: analyse.png  used on input line 226.
+(pdftex.def)             Requested size: 519.93329pt x 237.68379pt.
 
-Overfull \hbox (37.52582pt too wide) in paragraph at lines 194--195
+Overfull \hbox (36.23642pt too wide) in paragraph at lines 226--227
  [][] 
  []
 
+<gantt.png, id=113, 1371.62437pt x 246.1697pt>
+File: gantt.png Graphic file (type png)
+<use gantt.png>
+Package pdftex.def Info: gantt.png  used on input line 238.
+(pdftex.def)             Requested size: 480.07573pt x 86.16068pt.
 File: header.png Graphic file (type png)
 <use header.png>
-Package pdftex.def Info: header.png  used on input line 198.
+Package pdftex.def Info: header.png  used on input line 246.
 (pdftex.def)             Requested size: 62.39267pt x 37.37938pt.
 
 Package fancyhdr Warning: \headheight is too small (31.0pt): 
@@ -708,7 +704,36 @@ Package fancyhdr Warning: \headheight is too small (31.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-10.72942pt}.
 
-[3 <./analyse.png> <./gantt.png>] (./rapport.lof)
+[3 <./analyse.png> <./gantt.png>]
+<clilian.png, id=123, 366.36874pt x 381.425pt>
+File: clilian.png Graphic file (type png)
+<use clilian.png>
+Package pdftex.def Info: clilian.png  used on input line 256.
+(pdftex.def)             Requested size: 128.23097pt x 133.50075pt.
+<cetienne.png, id=124, 668.4975pt x 240.9pt>
+File: cetienne.png Graphic file (type png)
+<use cetienne.png>
+Package pdftex.def Info: cetienne.png  used on input line 268.
+(pdftex.def)             Requested size: 233.97763pt x 84.31625pt.
+<chugo.png, id=125, 200.75pt x 200.75pt>
+File: chugo.png Graphic file (type png)
+<use chugo.png>
+Package pdftex.def Info: chugo.png  used on input line 279.
+(pdftex.def)             Requested size: 70.26353pt x 70.26353pt.
+File: header.png Graphic file (type png)
+<use header.png>
+Package pdftex.def Info: header.png  used on input line 284.
+(pdftex.def)             Requested size: 62.39267pt x 37.37938pt.
+
+
+Package fancyhdr Warning: \headheight is too small (31.0pt): 
+(fancyhdr)                Make it at least 41.72942pt, for example:
+(fancyhdr)                \setlength{\headheight}{41.72942pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-10.72942pt}.
+
+[4 <./clilian.png> <./cetienne.png (PNG copy)> <./chugo.png>] (./rapport.lof)
 \tf@lof=\write5
 \openout5 = `rapport.lof'.
 
@@ -717,7 +742,7 @@ Package fancyhdr Warning: \headheight is too small (31.0pt):
 AED: lastpage setting LastPage
 File: header.png Graphic file (type png)
 <use header.png>
-Package pdftex.def Info: header.png  used on input line 203.
+Package pdftex.def Info: header.png  used on input line 290.
 (pdftex.def)             Requested size: 62.39267pt x 37.37938pt.
 
 Package fancyhdr Warning: \headheight is too small (31.0pt): 
@@ -727,27 +752,28 @@ Package fancyhdr Warning: \headheight is too small (31.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-10.72942pt}.
 
-[4] (./rapport.aux)
+[5] (./rapport.aux)
 Package rerunfilecheck Info: File `rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 2B63A69E241D409682D9733E4B40A4D8;1314.
+(rerunfilecheck)             Checksum: 3A3392C7220C60DFFD3D48A0E82E3B57;2357.
  ) 
 Here is how much of TeX's memory you used:
- 14288 strings out of 478287
- 220460 string characters out of 5849289
- 708722 words of memory out of 5000000
- 32238 multiletter control sequences out of 15000+600000
- 518371 words of font info for 58 fonts, out of 8000000 for 9000
+ 14327 strings out of 478287
+ 221000 string characters out of 5849289
+ 714722 words of memory out of 5000000
+ 32263 multiletter control sequences out of 15000+600000
+ 522633 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,15n,63p,299b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,16n,63p,577b,426s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/
 public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/s
 hare/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/t
-exmf/fonts/type1/public/lm/lmr17.pfb>
-Output written on rapport.pdf (5 pages, 595559 bytes).
+exmf/fonts/type1/public/lm/lmr17.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+ri12.pfb>
+Output written on rapport.pdf (6 pages, 659999 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
- 19 named destinations out of 1000 (max. 500000)
- 108 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 187 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
+ 29 named destinations out of 1000 (max. 500000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
