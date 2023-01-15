@@ -162,6 +162,7 @@ Notre projet sera disponible sur le Gitlab de l'ISIMA INP en protection \textit{
 
 Retrouver notre projet en suivant ce lien: \href{https://gitlab.isima.fr/liballejos/smairport}{ici}
 
+\newpage
 
 \section{Choix du langage}
 
@@ -175,7 +176,6 @@ Nous avons décidé de coder ce programme en \textbf{C++} pour deux raisons:
 	\item Cela nous permettra de nous améliorer dans ce langage que nous étudions en ce moment en cours et sur lequel nous serons évalués.
 \end{itemize}
 
-\newpage
 
 
 \section{Objectifs}
@@ -204,7 +204,7 @@ Voici un diagramme de cas d'utilisation qui représente notre futur simulation.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.4]{usecase.png}
+	\includegraphics[scale=0.285]{usecase.png}
 	\caption{Diagramme de cas d'utilisation}    
 \end{figure}
 
@@ -216,8 +216,14 @@ Nos deux types d'agents seront tous des personnes.
 
 L'aéroport est composés de différents éléments qui le \textbf{compose} comme la zone d'embarquement, la boutique et la zone de bagages
 
+Les visiteurs interagissement entre eux et avec les différents éléments de l'aéroport.
+
+Les douaniers interagissent avec les visiteurs. 
+
 
 \subsection{Diagramme de classe d'analyse}
+
+\subsubsection{Le diagramme}
 
 Voici un diagramme de classe d'analyse qui réparti et défini les différents éléments de notre future simulation.
 
@@ -226,6 +232,15 @@ Voici un diagramme de classe d'analyse qui réparti et défini les différents �
 	\includegraphics[scale=0.4]{analyse.png}
 	\caption{Diagramme de classe d'analyse}    
 \end{figure}
+
+\subsubsection{Explication des choix}
+
+Nous avons mis des compositions pour les différents éléments de l'aéroport (Boutiques par exemple) car sans aéroport ces éléments sont voués à disparaitre car inutile.
+
+Nous avons considéré cependant que les visiteurs et douaniers sont par contre des agrégations car pas forcément rattaché à un aéroport précis. Si l'aéroport venait disparaitre, il ne faudrait pas forcement supprimer les agents.
+
+Nous avons de plus choisis de faire une agrégation par type d'agent car ils n'ont pas le même rôle dans l'aéroport. Nous n'avons donc pas mit une agrégation général sur "\textit{Personne}". 
+
 
 \section{Planification des tâches}
 
@@ -281,7 +296,7 @@ Hugo se spécialisera dans la production de documentation à l'aide de l'outil D
 \end{figure}
 
 
-\newpage
+\bigskip
 
 
 \listoffigures
