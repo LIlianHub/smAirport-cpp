@@ -69,7 +69,7 @@
 \fancyhead[C]{\includegraphics[scale=0.28]{header.png}}
 \fancyhead[R]{Dossier Analyse \\ Métier}
 \renewcommand\footrulewidth{1pt}
-\fancyfoot[L]{SMairport}
+\fancyfoot[L]{SMAirport}
 \fancyfoot[C]{\thepage/\pageref{LastPage}}
 \fancyfoot[R]{2022/2023}
 %Fin personalisation En Tête
@@ -89,7 +89,7 @@
   \begin{center}\huge
     \textbf{Dossier Analyse Métier} 
     
-    \textbf{SMairport}
+    \textbf{SMAirport}
   \end{center}
   
   \hrule %trait horizontal
@@ -214,7 +214,7 @@ Voici un diagramme de cas d'utilisation qui représente notre futur simulation.
 
 Nos deux types d'agents seront tous des personnes.
 
-L'aéroport est composés de différents éléments qui le \textbf{compose} comme la zone d'embarquement, la boutique et la zone de bagages
+L'aéroport est composé de différents éléments qui le \textbf{compose} comme la zone d'embarquement, la boutique et la zone de bagages
 
 Les visiteurs interagissement entre eux et avec les différents éléments de l'aéroport.
 
@@ -237,16 +237,14 @@ Voici un diagramme de classe d'analyse qui réparti et défini les différents �
 
 Nous avons mis des compositions pour les différents éléments de l'aéroport (Boutiques par exemple) car sans aéroport ces éléments sont voués à disparaitre car inutile.
 
-Nous avons considéré cependant que les visiteurs et douaniers sont par contre des agrégations car pas forcément rattaché à un aéroport précis. Si l'aéroport venait disparaitre, il ne faudrait pas forcement supprimer les agents.
+Nous avons considéré cependant que les visiteurs et douaniers sont par contre des agrégations car pas forcément rattachés à un aéroport précis. Si l'aéroport viendrait à disparaitre, il ne faudrait pas forcement supprimer les agents.
 
-Nous avons de plus choisis de faire une agrégation par type d'agent car ils n'ont pas le même rôle dans l'aéroport. Nous n'avons donc pas mit une agrégation général sur "\textit{Personne}". 
+Nous avons de plus, choisis de faire une agrégation par type d'agent car ils n'ont pas le même rôle dans l'aéroport. Nous n'avons donc pas mit une agrégation générale sur "\textit{Personne}". 
 
 
 \section{Planification des tâches}
 
-Nous nous sommes réparties temporellement les différentes tâches à faire et l'avons représenté visuellement à l'aide d'un Gantt.
-
-\subsection{Gantt}
+Nous nous sommes répartis temporellement les différentes tâches à faire et l'avons représenté visuellement à l'aide d'un Gantt.
 
 \begin{figure}[H]
 	\centering

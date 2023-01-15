@@ -11,7 +11,6 @@
 \contentsline {subsubsection}{\numberline {5.2.1}Le diagramme}{3}{subsubsection.5.2.1}%
 \contentsline {subsubsection}{\numberline {5.2.2}Explication des choix}{3}{subsubsection.5.2.2}%
 \contentsline {section}{\numberline {6}Planification des tâches}{4}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Gantt}{4}{subsection.6.1}%
 \contentsline {section}{\numberline {7}Les spécialisations pour chaque membre du binôme}{4}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Choix de BALLEJOS Lilian}{4}{subsection.7.1}%
 \contentsline {subsection}{\numberline {7.2}Choix de CHARPIN Etienne}{4}{subsection.7.2}%
