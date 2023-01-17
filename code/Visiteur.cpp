@@ -10,9 +10,19 @@ int Visiteur::getBudget(){
     return budget;
 };
 
-/*Visiteur::Visiteur(std::string name,std::string prename,int nbbag,int nbbud):nom{name},prenom{prename},nbBagage{nbbag},budget{nbbud}{
+Visiteur::Visiteur(std::string name,std::string prename,int nbbag,int nbbud) : Personne(name,prename){
 
-}*/
+    nbBagage = nbbag;
+    budget = nbbud;
+}
+void Visiteur::setBudget(int bud){
+    budget = bud;
+}
+
+void Visiteur::setBagage(int bag){
+    nbBagage = bag;
+}
+
 Visiteur::Visiteur(){
     
 }

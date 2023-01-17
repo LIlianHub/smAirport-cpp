@@ -12,9 +12,9 @@ class Visiteur : public Personne {
     public:
         int getBagage();
         int getBudget();
-        //void setBudget(int bud);
-        //void setBagage(int bag);
-        //Visiteur(std::string,std::string,int,int);
+        void setBudget(int bud);
+        void setBagage(int bag);
+        Visiteur(std::string name,std::string prename,int,int);
         Visiteur();
 
 };
