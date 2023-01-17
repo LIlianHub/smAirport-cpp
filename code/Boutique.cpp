@@ -1,17 +1,24 @@
 #include "Boutique.hpp"
 
-int Boutique::getNbPersonneMax(){
+int Boutique::getNbPersonneMax()
+{
     return nombrePersonneMax;
 }
 
-int Boutique::getNbPersonneActuelle(){
+int Boutique::getNbPersonneActuelle()
+{
     return nombrePersonneActuel;
 }
 
-string Boutique::getnomBoutique(){
+string Boutique::getnomBoutique()
+{
     return nomBoutique;
 }
 
-Boutique::Boutique(int nbPersonne, string nom):nombrePersonneMax(nbPersonne),nomBoutique(nom),nombrePersonneActuel(0){
+Boutique::Boutique(int nbPersonne, string nom) : nombrePersonneMax(nbPersonne), nomBoutique(nom), nombrePersonneActuel(0)
+{
+}
 
+Boutique::Boutique()
+{
 }

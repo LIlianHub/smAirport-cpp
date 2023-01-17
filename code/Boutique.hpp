@@ -18,6 +18,7 @@ public:
 
 public:
     Boutique(int, string);
+    Boutique();
 };
 
 #endif
