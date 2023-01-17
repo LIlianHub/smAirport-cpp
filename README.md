@@ -1,3 +1,5 @@
+[![pipeline status](https://gitlab.isima.fr/liballejos/smairport/badges/master/pipeline.svg)](https://gitlab.isima.fr/liballejos/smairport/-/commits/master)
+
 # SMAirport
 
 ## Members
