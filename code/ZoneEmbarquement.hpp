@@ -9,6 +9,7 @@ class ZoneEmbarquement{
     int nombrePersonneActuelle;
     string nomZoneEmbarquement;
     FileAttente file;
+    static int compteur=0;
 
     public:
         int getNombrePersonneMax();
