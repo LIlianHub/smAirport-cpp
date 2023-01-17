@@ -4,7 +4,6 @@
 #include "Personne.hpp"
 class Douanier : public Personne {
 
-        Douanier(std::string,std::string);
         Douanier();
 
 };

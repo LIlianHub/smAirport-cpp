@@ -17,6 +17,7 @@ class Personne {
         std::string getprenom();
         int getid();
         Personne(std::string name,std::string prename);
+        Personne();
 
     };
 

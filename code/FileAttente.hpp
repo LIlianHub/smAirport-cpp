@@ -1,7 +1,7 @@
 #ifndef FILEATTENTE_GUARD
 #define FILEATTENTE_GUARD
 #include <iostream>
-#include "Visiteur.cpp"
+#include "Visiteur.hpp"
 
 class FileAttente{
     Visiteur * liste;
@@ -9,6 +9,7 @@ class FileAttente{
 
     public:
         FileAttente(int size);
+        FileAttente();
         ~FileAttente();
 
 };
