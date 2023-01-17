@@ -10,6 +10,9 @@ int Position::getY() {
   return y;
 }
 
+Position::Position(){}
+
+
 
 Position::Position(int a,int b):x{a},y{b}{
     

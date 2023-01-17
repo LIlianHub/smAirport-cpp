@@ -3,7 +3,7 @@
 
 Personne::Personne(std::string name,std::string prename):nom{name},prenom{prename}{
     std::cout << "Constructeur de personne" << std::endl;
-}
+};
 
 std::string Personne::getnom(){
     return nom;

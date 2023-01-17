@@ -3,20 +3,21 @@
 
 #include <iostream>
 
-
 using std::string;
 
-
-class Boutique{
+class Boutique
+{
     int nombrePersonneMax;
-    int nombrePersonneActuel;
     string nomBoutique;
+    int nombrePersonneActuel;
+    
+public:
+    int getNbPersonneMax();
+    int getNbPersonneActuelle();
+    string getnomBoutique();
 
-    public:
-        int getNbPersonneMax();
-        int getNbPersonneActuelle();
-        string getnomBoutique();
-        Boutique(int nbPersonne, string nom);
+public:
+    Boutique(int, string);
 };
 
 #endif

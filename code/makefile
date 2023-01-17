@@ -1,6 +1,6 @@
-#SRC=main.cpp
-SRC= Aeroport.cpp ZoneBagage.cpp
-EXE=main
+SRC=main.cpp
+SRC+=Aeroport.cpp ZoneBagage.cpp Boutique.cpp Personne.cpp Douanier.cpp Visiteur.cpp Position.cpp
+EXE=SMAirport
 
 CC=g++
 CFLAGS:=-Wall -Wextra -g

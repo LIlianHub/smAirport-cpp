@@ -3,21 +3,19 @@
 
 #include "Position.hpp"
 
-
-
-class Personne {
+class Personne
+{
 
     std::string nom;
     std::string prenom;
     int id;
     Position pos;
 
-     public:
-        std::string getnom();
-        std::string getprenom();
-        int getid();
-        Personne(std::string name,std::string prename);
-
-    };
+public:
+    std::string getnom();
+    std::string getprenom();
+    int getid();
+    Personne(std::string name, std::string prename);
+};
 
 #endif
