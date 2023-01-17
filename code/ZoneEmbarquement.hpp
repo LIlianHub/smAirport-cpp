@@ -1,6 +1,7 @@
 #ifndef ZONEEMBARQUEMENT_GUARD
 #define ZONEEMBARQUEMENT_GUARD
 #include <iostream>
+#include "FileAttente.hpp"
 
 using std::string;
 
@@ -9,13 +10,13 @@ class ZoneEmbarquement{
     int nombrePersonneActuelle;
     string nomZoneEmbarquement;
     FileAttente file;
-    static int compteur=0;
 
     public:
         int getNombrePersonneMax();
         int getNbPersonneActuelle();
         string getnomZoneEmarquement();
         ZoneEmbarquement(int nombrePersonne, string nom);
-}
+        ZoneEmbarquement();
+};
 
 #endif

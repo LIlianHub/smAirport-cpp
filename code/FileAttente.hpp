@@ -11,6 +11,6 @@ class FileAttente{
         FileAttente(int size);
         ~FileAttente();
 
-}
+};
 
 #endif

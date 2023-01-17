@@ -3,6 +3,7 @@
 
 #include "ZoneBagage.hpp"
 #include "Boutique.hpp"
+#include "ZoneEmbarquement.hpp"
 
 
 class Aeroport
@@ -10,9 +11,10 @@ class Aeroport
     std::string nom;
     ZoneBagage * zoneBagages;
     Boutique * boutiques;
+    ZoneEmbarquement * zoneEmbarquements;
 
 public:
-    Aeroport(std::string, int, int);
+    Aeroport(std::string, int, int, int);
     ~Aeroport();
 
 public:

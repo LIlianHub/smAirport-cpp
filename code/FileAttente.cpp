@@ -1,10 +1,12 @@
 #include "FileAttente.hpp"
 
-FileAttente::FileAttente(int size):liste(nullptr),taille(size){
-    list=new Visiteur[taille];
+FileAttente::FileAttente(int size) : liste(nullptr), taille(size)
+{
+    liste = new Visiteur[taille];
 }
 
-FileAttente::~FileAttente(){
-    if(liste)
-        delete [] liste;
+FileAttente::~FileAttente()
+{
+    if (liste)
+        delete[] liste;
 }
