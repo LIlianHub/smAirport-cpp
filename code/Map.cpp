@@ -49,8 +49,10 @@ void Map::AfficherMap(){
         std::cout << std::endl;
     }
 
+
+}
+
     int Map::OnthisCase(int j,int i){
 
         return grille[j][i];
     }
-}
