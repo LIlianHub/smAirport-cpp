@@ -1,6 +1,6 @@
 #include <iostream>  // Inclusion d'un fichier standard
 #include "Personne.hpp" // Inclusion d'un fichier du répertoire courant
-#include "Map.hpp"
+
 
 Personne::Personne(std::string name,std::string prename):nom{name},prenom{prename}{
     std::cout << "Constructeur de personne" << std::endl;

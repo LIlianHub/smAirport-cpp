@@ -1,7 +1,7 @@
 #ifndef RANDOM_MT_GUARD
 #define RANDOM_MT_GUARD
 
-class Random_MT{
+static class Random_MT{
     
 }
 

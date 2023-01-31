@@ -2,7 +2,7 @@
 #define PERS_GUARD
 
 #include "Position.hpp"
-
+#include "Map.hpp"
 
 
 class Personne {
@@ -21,7 +21,7 @@ class Personne {
         int getid();
         Position getPos();
 
-        bool deplacerPersonne(Map m,Position p);
+        bool deplacerPersonne(Position p);
     
     private:
         void setNom(std::string n);
