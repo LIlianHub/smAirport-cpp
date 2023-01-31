@@ -40,15 +40,15 @@ void Personne::setPos(Position p){
     pos=p;
 }
 
-bool Personne::deplacerPersonne(Position p){
+bool Personne::deplacerPersonne(Position p1){
     bool retour;
-    if(p.getX()>=0&&p.getY()>=0&&p.getX()<=20&&p.getY()<=20){
-        // if(m.contientPersonne(p)==true){
-        //     retour=false;
-        // }else{
-        //     setPos(p);
-        //     retour=true;
-        // }
+    if(p1.getX()>=0&&p1.getY()>=0&&p1.getX()<=20&&p1.getY()<=20){
+        if(p.OnthisCase(p1.getX(),p1.getY())==1){
+            retour=false;
+        }else{
+            setPos(p1);
+            retour=true;
+        }
     }else{
         retour=false;
     }

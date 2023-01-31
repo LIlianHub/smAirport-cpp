@@ -22,13 +22,13 @@ class Personne {
         int getid();
         Position getPos();
 
-        bool deplacerPersonne(Position p);
+        bool deplacerPersonne(Position p1);
     
     private:
         void setNom(std::string n);
         void setPrenom(std::string p);
         void setPos(Position p);
 
-    };
-
+};
+extern Map p;
 #endif
