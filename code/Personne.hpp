@@ -22,7 +22,7 @@ class Personne {
         int getid();
         Position getPos();
 
-        bool deplacerPersonne(Position p);
+        bool deplacerPersonne(Position p1);
     
     private:
         void setNom(std::string n);
