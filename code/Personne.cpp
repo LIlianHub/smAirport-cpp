@@ -39,12 +39,12 @@ void setPos(Position p){
 bool deplacerPersonne(Position p){
     bool retour;
     if(p.getX()>=0&&p.getY()>=0&&p.getX()<=20&&p.getY()<=20){
-        if(m.contientPersonne(p)==true){
-            retour=false;
-        }else{
-            setPos(p);
-            retour=true;
-        }
+        // if(m.contientPersonne(p)==true){
+        //     retour=false;
+        // }else{
+        //     setPos(p);
+        //     retour=true;
+        // }
     }else{
         retour=false;
     }
