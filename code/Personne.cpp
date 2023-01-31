@@ -12,7 +12,7 @@ std::string Personne::getnom(){
     return nom;
 };
 
-void setNom(std::string n){
+void Personne::setNom(std::string n){
     nom=n;
 }
 
@@ -20,7 +20,7 @@ std::string Personne::getprenom(){
     return prenom;
 };
 
-void setPrenom(std::string p){
+void Personne::setPrenom(std::string p){
     prenom=p;
 }
 
@@ -32,11 +32,11 @@ Position getPos(){
     return pos;
 }
 
-void setPos(Position p){
+void Personne::setPos(Position p){
     pos=p;
 }
 
-bool deplacerPersonne(Position p){
+bool Personne::deplacerPersonne(Position p){
     bool retour;
     if(p.getX()>=0&&p.getY()>=0&&p.getX()<=20&&p.getY()<=20){
         // if(m.contientPersonne(p)==true){
