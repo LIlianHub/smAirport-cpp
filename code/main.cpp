@@ -2,14 +2,17 @@
 #include <string>
 #include <unistd.h>
 #include "Map.hpp"
+#include "Personne.hpp"
 
 using std::endl;
 using std::cout;
 
+
 int main(int, char **) {
 
 
-  Map p{};
+  p.grille[12][13] = 3;
+  p.grille[0][0] = 1;
   int temps = 0;
   while (temps < 20)
   {

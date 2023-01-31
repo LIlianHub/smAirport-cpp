@@ -3,13 +3,19 @@
 
 
 Map::Map(){
+
+    for(int i = 0; i < 20 ; i++){
+        for(int j = 0; j < 20 ; j++){
+            grille[j][i] = 0;
+        }
+    }
 }
 
 void Map::AfficherMap(){
     for(int i = 0; i < 20 ; i++){
         for(int j = 0; j < 20 ; j++){
 
-            switch (grille[i][j])
+            switch (grille[j][i])
             {
             case 0:
                 std::cout << " . ";
