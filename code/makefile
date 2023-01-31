@@ -1,5 +1,5 @@
 SRC=main.cpp
-SRC+=Aeroport.cpp ZoneBagage.cpp Boutique.cpp Personne.cpp Douanier.cpp Visiteur.cpp Position.cpp FileAttente.cpp ZoneEmbarquement.cpp
+SRC+=Aeroport.cpp ZoneBagage.cpp Boutique.cpp Personne.cpp Douanier.cpp Visiteur.cpp Position.cpp FileAttente.cpp ZoneEmbarquement.cpp Map.cpp
 EXE=SMAirport
 
 CC=g++
