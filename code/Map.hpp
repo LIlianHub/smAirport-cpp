@@ -13,6 +13,4 @@ class Map
         int OnthisCase(int,int);
 };
 
-extern Map p;
-
 #endif

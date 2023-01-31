@@ -7,6 +7,7 @@
 using std::endl;
 using std::cout;
 
+Map p{};
 
 int main(int, char **) {
 
