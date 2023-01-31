@@ -12,12 +12,21 @@ class Personne {
     int id;
     Position pos;
 
-     public:
+    public:
+        Personne(std::string name,std::string prename);
+        Personne();
+
         std::string getnom();
         std::string getprenom();
         int getid();
-        Personne(std::string name,std::string prename);
-        Personne();
+        Position getPos();
+
+        bool deplacerPersonne(Map m,Position p);
+    
+    private:
+        void setNom(std::string n);
+        void setPrenom(std::string p);
+        void setPos(Position p);
 
     };
 
