@@ -6,6 +6,10 @@ Personne::Personne(std::string name,std::string prename):nom{name},prenom{prenam
     std::cout << "Constructeur de personne" << std::endl;
 }
 
+Personne::Personne(Position p):Personne("",""){
+    pos=p;
+}
+
 Personne::Personne(){}
 
 std::string Personne::getnom(){

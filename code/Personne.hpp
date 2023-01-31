@@ -14,6 +14,7 @@ class Personne {
 
     public:
         Personne(std::string name,std::string prename);
+        Personne(Position p);
         Personne();
 
         std::string getnom();
