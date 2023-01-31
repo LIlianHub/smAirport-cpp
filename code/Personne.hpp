@@ -29,6 +29,6 @@ class Personne {
         void setPrenom(std::string p);
         void setPos(Position p);
 
-    };
-
+};
+extern Map p;
 #endif
