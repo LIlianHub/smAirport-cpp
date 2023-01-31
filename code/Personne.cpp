@@ -28,7 +28,7 @@ int Personne::getid(){
     return id;
 };
 
-Position getPos(){
+void Personne::Position getPos(){
     return pos;
 }
 
