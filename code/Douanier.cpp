@@ -11,8 +11,8 @@ Douanier::Douanier(){}
 void Douanier::getVoisin(int &nombreVoisin, Position &voisin){
     //tableau voisin de taille 8 = taille max des voisins possibles
     int curseur = 0;
-    Position posDounier = getPose();
-    for(int i = ; i < 9; i++){
+    Position posDounier = getPos();
+    for(int i = 0; i < 9; i++){
         
     }
 
