@@ -20,7 +20,11 @@ Simulation de passage de douane dans un aéroport avec différents agents.
 
 ## Travail à faire
 
-[ ] Dossier de projet (Rendu 1)
+[X] Dossier de projet (Rendu 1)
+
+[ ] Coder le projet
+
+[ ] Dossier de rendu de projet (Rendu 2)
 
 
 
