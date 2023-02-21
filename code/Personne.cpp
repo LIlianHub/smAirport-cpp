@@ -72,6 +72,4 @@ bool Personne::deplacerPersonne(Position p1){
 
 Personne::~Personne(){}
 
-void Personne::Action(){
-}
 

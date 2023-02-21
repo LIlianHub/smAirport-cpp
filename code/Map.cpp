@@ -58,7 +58,7 @@ int Map::OnthisCase(int j,int i){
     return grille[j][i];
 }
 
-void Map::ajouterPers(Personne p){
+void Map::ajouterPers(Personne * p){
     tabpers[nbpersonne] = p;
     nbpersonne++;
 }
