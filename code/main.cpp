@@ -13,6 +13,8 @@ Map p{};
 int main(int, char **) {
 
   Personne pers(Position(0,0));
+  p.tabpers[p.nbpersonne] = pers;
+  p.nbpersonne++;
   p.grille[12][13] = 3;
   p.grille[pers.getPos().getX()][pers.getPos().getY()] = 1;
   int temps = 0;

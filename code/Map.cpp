@@ -2,13 +2,14 @@
 #include "Map.hpp"
 
 
-Map::Map(){
+Map::Map(): nbpersonne{0}{
 
     for(int i = 0; i < 20 ; i++){
         for(int j = 0; j < 20 ; j++){
             grille[j][i] = 0;
         }
     }
+
 }
 
 void Map::AfficherMap(){

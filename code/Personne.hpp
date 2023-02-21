@@ -30,5 +30,4 @@ class Personne {
         void setPos(Position p);
 
 };
-extern Map p;
 #endif
