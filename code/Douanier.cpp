@@ -8,6 +8,10 @@ Douanier::Douanier(std::string nom, std::string prenom) : Personne(nom, prenom),
 }
 Douanier::Douanier() {}
 
+Douanier::Douanier(Position p):Personne(p){
+    
+}
+
 // Fonction
 
 void Douanier::getVoisin(int &nombreVoisin, Position voisin[])
