@@ -60,13 +60,14 @@ int Map::OnthisCase(int j,int i){
 
 bool Map::ajouterPers(Personne * p){
     bool retour;
+    Visiteur v;
     if(OnthisCase(p->getPos().getX(),p->getPos().getY())==1||OnthisCase(p->getPos().getX(),p->getPos().getY())==2){
         retour=false;
     }else{
         tabpers[nbpersonne] = p;
         nbpersonne++;
         retour=true;
-        if(typeid(p).name()=="Visiteur"){
+        if(typeid(p)==typeid(v)){
             grille[p->getPos().getX()][p->getPos().getY()]=1;
         }else{
             grille[p->getPos().getX()][p->getPos().getY()]=2;

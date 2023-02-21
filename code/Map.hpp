@@ -2,6 +2,7 @@
 #define _MAP
 
 #include "Personne.hpp"
+#include "Visiteur.hpp"
 
 class Map
 {
