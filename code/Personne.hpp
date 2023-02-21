@@ -21,7 +21,7 @@ class Personne {
         std::string getprenom();
         int getid();
         Position getPos();
-        virtual void Action() = 0;
+        virtual void Action();
 
 
         bool deplacerPersonne(Position p1);
