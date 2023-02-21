@@ -14,7 +14,7 @@ class Map
         Map();
         void AfficherMap();
         int OnthisCase(int,int);
-        void ajouterPers(Personne * p);
+        bool ajouterPers(Personne * p);
 };
 
 #endif
