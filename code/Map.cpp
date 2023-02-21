@@ -59,6 +59,6 @@ int Map::OnthisCase(int j,int i){
 }
 
 void Map::ajouterPers(Personne p){
-    tabpers[nbpersonne]=p;
+    tabpers[nbpersonne] = p;
     nbpersonne++;
 }
