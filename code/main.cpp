@@ -28,7 +28,7 @@ int main(int, char **) {
     for(int i=0;i<m.nbpersonne;i++){
       m.tabpers[i].Action();
     }
-    system("clear");
+    //system("clear");
     //m.AfficherMap();
     std::cout << temps << std::endl;
     temps++;

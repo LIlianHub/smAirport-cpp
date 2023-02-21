@@ -14,6 +14,7 @@ class Map
         Map();
         void AfficherMap();
         int OnthisCase(int,int);
+        void ajouterPers(Personne p);
 };
 
 #endif
