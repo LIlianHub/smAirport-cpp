@@ -21,7 +21,7 @@ void Douanier::getVoisin(int &nombreVoisin, Position voisin[])
     {
         for (int j = posDounier.getX(); j <= posDounier.getX() + 1; j++)
         {
-            info = p.OnthisCase(i, j);
+            info = m.OnthisCase(i, j);
             if (info == 1 && i != posDounier.getY() && j != posDounier.getX())
             {
                 voisin[curseur] = Position(j, i);

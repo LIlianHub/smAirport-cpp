@@ -2,8 +2,7 @@
 #define PERS_GUARD
 
 #include "Position.hpp"
-#include "Map.hpp"
-
+class Map;
 
 class Personne {
 
@@ -32,4 +31,5 @@ class Personne {
         void setPos(Position p);
 
 };
+
 #endif

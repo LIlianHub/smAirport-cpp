@@ -22,5 +22,5 @@ public:
 };
 
 const double probaControle[8] = {0.6, 0.2, 0.1, 0.05, 0.05};
-extern Map p;
+extern Map m;
 #endif

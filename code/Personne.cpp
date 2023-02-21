@@ -1,6 +1,7 @@
 #include <iostream>  // Inclusion d'un fichier standard
 #include "Personne.hpp" // Inclusion d'un fichier du répertoire courant
-
+#include "Map.hpp"
+extern Map m;
 
 Personne::Personne(std::string name,std::string prename):nom{name},prenom{prename}{
     std::cout << "Constructeur de personne" << std::endl;
@@ -57,7 +58,7 @@ bool Personne::deplacerPersonne(Position p1){
                 futurpos.setY(futurpos.getY()-1);
             }
         }
-        if(p.OnthisCase(futurpos.getX(),futurpos.getY())==1){
+        if(m.OnthisCase(futurpos.getX(),futurpos.getY())==1){
             retour=false;
         }else{
             setPos(p1);
