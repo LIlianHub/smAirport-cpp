@@ -44,25 +44,25 @@ bool Personne::deplacerPersonne(Position p1){
     bool retour;
     Position futurpos=pos;
     if(p1.getX()>=0&&p1.getY()>=0&&p1.getX()<=20&&p1.getY()<=20){
-        // if(pos.getX()!=p1.getX()){
-        //     if(pos.getX()-p1.getX()<0){
-        //         futurpos.setX()=futurpos.getX()+1;
-        //     }else{
-        //         futurpos.setX()=futurpos.getX()-1;
-        //     }
-        // }else if(pos.getY()-p1.getY()<0){
-        //     if(pos.getY()-p1.getY()<0){
-        //         futurpos.setY()=futurpos.getY()+1;
-        //     }else{
-        //         futurpos.setY()=futurpos.getY()-1;
-        //     }
-        // }
-        // if(p.OnthisCase(futurpos.getX(),futurpos.getY())==1){
-        //     retour=false;
-        // }else{
-        //     setPos(p1);
-        //     retour=true;
-        // }
+        if(pos.getX()!=p1.getX()){
+            if(pos.getX()-p1.getX()<0){
+                futurpos.setX(futurpos.getX()+1);
+            }else{
+                futurpos.setX(futurpos.getX()-1);
+            }
+        }else if(pos.getY()!=p1.getY()){
+            if(pos.getY()-p1.getY()<0){
+                futurpos.setY(futurpos.getY()+1);
+            }else{
+                futurpos.setY(futurpos.getY()-1);
+            }
+        }
+        if(p.OnthisCase(futurpos.getX(),futurpos.getY())==1){
+            retour=false;
+        }else{
+            setPos(p1);
+            retour=true;
+        }
     }else{
         retour=false;
     }

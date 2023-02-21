@@ -10,6 +10,14 @@ int Position::getY() {
   return y;
 }
 
+void Position::setX(int posX){
+  x=posX;
+}
+
+void Position::setY(int posY){
+  y=posY;
+}
+
 Position::Position(){}
 
 
