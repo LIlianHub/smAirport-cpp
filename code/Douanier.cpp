@@ -41,3 +41,7 @@ void Douanier::setEnControle(bool valControle)
 {
     enControle = valControle;
 }
+
+void Douanier::Action(){
+    std::cout << "Hupla" << std::endl;
+}

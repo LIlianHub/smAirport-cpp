@@ -68,3 +68,4 @@ bool Personne::deplacerPersonne(Position p1){
     }
     return retour;
 }
+

@@ -26,3 +26,7 @@ void Visiteur::setBagage(int bag){
 Visiteur::Visiteur(){
     
 }
+
+void Visiteur::Action(){
+    std::cout << "HuplaVisteur" << std::endl;
+}
