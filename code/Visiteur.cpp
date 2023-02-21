@@ -32,3 +32,5 @@ Visiteur::Visiteur(Position p):Personne(p){}
 void Visiteur::Action(){
     std::cout << "HuplaVisteur" << std::endl;
 }
+
+Visiteur::~Visiteur(){}

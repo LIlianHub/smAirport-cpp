@@ -21,6 +21,7 @@ class Personne {
         int getid();
         Position getPos();
         virtual void Action();
+        virtual ~Personne();
 
 
         bool deplacerPersonne(Position p1);

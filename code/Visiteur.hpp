@@ -18,6 +18,7 @@ class Visiteur : public Personne {
         Visiteur();
         Visiteur(Position p);
         void Action();
+        ~Visiteur();
 
 };
 

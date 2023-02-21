@@ -70,6 +70,8 @@ bool Personne::deplacerPersonne(Position p1){
     return retour;
 }
 
+Personne::~Personne(){}
+
 void Personne::Action(){
 }
 
