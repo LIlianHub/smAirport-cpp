@@ -4,6 +4,8 @@
 #include "Map.hpp"
 #include "Personne.hpp"
 #include "Position.hpp"
+#include "Visiteur.hpp"
+#include "Douanier.hpp"
 
 using std::endl;
 using std::cout;
@@ -12,7 +14,7 @@ Map m{};
 
 int main(int, char **) {
 
-  Personne pers(Position(0,0));
+  Visiteur pers(Position(0,0));
   m.tabpers[m.nbpersonne] = pers;
   m.nbpersonne++;
   m.grille[12][13] = 3;

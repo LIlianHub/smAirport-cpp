@@ -16,6 +16,7 @@ class Visiteur : public Personne {
         void setBagage(int bag);
         Visiteur(std::string name,std::string prename,int,int);
         Visiteur();
+        Visiteur(Position p);
         void Action();
 
 };
