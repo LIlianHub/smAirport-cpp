@@ -15,8 +15,9 @@ Map m{};
 int main(int, char **) {
 
   Visiteur pers(Position(0,0));
-  m.tabpers[m.nbpersonne] = pers;
-  m.nbpersonne++;
+  m.ajouterPers(pers);
+  // m.tabpers[m.nbpersonne] = pers;
+  // m.nbpersonne++;
   m.grille[12][13] = 3;
   m.grille[pers.getPos().getX()][pers.getPos().getY()] = 1;
   int temps = 0;
