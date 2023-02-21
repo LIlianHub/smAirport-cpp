@@ -67,7 +67,7 @@ bool Map::ajouterPers(Personne * p){
         tabpers[nbpersonne] = p;
         nbpersonne++;
         retour=true;
-        if(typeid(p)==typeid(v)){
+        if(Visiteur * d = dynamic_cast<Visiteur*>(p)){
             grille[p->getPos().getX()][p->getPos().getY()]=1;
         }else{
             grille[p->getPos().getX()][p->getPos().getY()]=2;

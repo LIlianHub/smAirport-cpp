@@ -18,8 +18,6 @@ int main(int, char **) {
   Douanier persd(Position(1,0));
   m.ajouterPers(&pers);
   m.ajouterPers(&persd);
-  m.grille[1][0] = 1;
-  m.grille[0][0] = 2;
   m.grille[12][13] = 3;
   int temps = 0;
 
