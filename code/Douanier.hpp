@@ -12,6 +12,7 @@ class Douanier : public Personne
 public:
         Douanier();
         Douanier(std::string, std::string);
+        Douanier(Position p);
         
 
 public:
