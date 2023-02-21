@@ -10,6 +10,8 @@ class Position
 public:
     int getX();
     int getY();
+    void setX(int posX);
+    void setY(int posY);
     Position(int x, int y);
     Position();
 };
