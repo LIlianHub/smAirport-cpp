@@ -1,4 +1,6 @@
 #include "Boutique.hpp"
+#include "Map.hpp"
+extern Map m;
 
 int Boutique::getNbPersonneMax()
 {
@@ -15,8 +17,9 @@ string Boutique::getnomBoutique()
     return nomBoutique;
 }
 
-Boutique::Boutique(int nbPersonne, string nom) : nombrePersonneMax(nbPersonne), nomBoutique(nom), nombrePersonneActuel(0)
+Boutique::Boutique(int nbPersonne, string nom,Position p) : nombrePersonneMax(nbPersonne), nomBoutique(nom), nombrePersonneActuel(0)
 {
+    m.grille[p.getX()][p.getY()] = 3;
 }
 
 Boutique::Boutique()

@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "Zone.hpp"
+#include "Position.hpp"
 
 using std::string;
 
@@ -19,7 +20,7 @@ public:
     
 
 public:
-    Boutique(int, string);
+    Boutique(int, string,Position);
     Boutique();
 };
 

@@ -7,6 +7,9 @@
 #include "Visiteur.hpp"
 #include "Douanier.hpp"
 #include "Random_MT.hpp"
+#include "ZoneEmbarquement.hpp"
+#include "ZoneBagage.hpp"
+#include "Boutique.hpp"
 
 using std::endl;
 using std::cout;
@@ -22,17 +25,16 @@ int main(int, char **) {
 
   Visiteur pers(Position(0,0));
   Douanier persd(Position(1,0));
-
+  ZoneEmbarquement ze1(100,"zonne emba 1",Position(15,19));
+  ZoneEmbarquement ze2(100,"zonne emba 2",Position(17,19));
+  ZoneBagage zb1(Position(2,19));
+  ZoneBagage zb2(Position(4,19));
+  Boutique b1(100,"boutique 1",Position(12,8));
+  Boutique b2(100,"boutique 2",Position(12,13));
+  Boutique b3(100,"boutique 3",Position(7,7));
   m.ajouterPers(&pers);
   m.ajouterPers(&persd);
-  m.grille[12][8] = 3;
-  m.grille[12][13] = 3;
-  m.grille[12][13] = 3;
-  m.grille[7][7] = 3;
-  m.grille[2][19] = 4;
-  m.grille[4][19] = 4;
-  m.grille[15][19] = 5;
-  m.grille[17][19] = 5;
+
   int temps = 0;
 
   int test;
