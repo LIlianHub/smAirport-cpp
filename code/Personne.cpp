@@ -42,7 +42,7 @@ void Personne::setPos(Position p){
 }
 
 bool Personne::deplacerPersonne(Position p1){
-    std::cout << "ici" << std::endl;
+    //std::cout << "ici" << std::endl;
     bool retour;
     Position futurpos=pos;
     if(p1.getX()>=0&&p1.getY()>=0&&p1.getX()<=20&&p1.getY()<=20){
@@ -62,13 +62,13 @@ bool Personne::deplacerPersonne(Position p1){
         if(m.OnthisCase(futurpos.getX(),futurpos.getY())==1){
             retour=false;
         }else{
-             m.grille[pos.getX()][pos.getY()]=0;
-            setPos(p1);
+            m.grille[pos.getX()][pos.getY()]=0;
+            setPos(futurpos);
             if(Visiteur * d = dynamic_cast<Visiteur*>(this)){
                 m.grille[futurpos.getX()][futurpos.getY()]=1;
             }
             else{
-            m.grille[futurpos.getX()][futurpos.getY()]=2;
+                m.grille[futurpos.getX()][futurpos.getY()]=2;
             }
             retour=true;
         }

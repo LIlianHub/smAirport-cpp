@@ -41,18 +41,18 @@ int main(int, char **) {
   Position info[9];
 
 
-  while (temps < 20)
+  while (temps < 50)
   {
     //persd.getVoisin(test, info);
 
-      m.tabpers[0]->deplacerPersonne(Position(0,temps));
-      m.tabpers[1]->deplacerPersonne(Position(1,temps));
-      m.tabpers[1]->Action();
+      //m.tabpers[0]->deplacerPersonne(Position(0,temps));
+      //m.tabpers[1]->deplacerPersonne(Position(1,temps));
+      //m.tabpers[1]->Action();
       m.tabpers[0]->Action();
 
-    system("clear");
+    //system("clear");
     m.AfficherMap();
-    std::cout << temps << std::endl;
+    //std::cout << temps << std::endl;
     temps++;
     sleep(1);
   }

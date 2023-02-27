@@ -22,6 +22,7 @@ Boutique::Boutique(int nbPersonne, string nom,Position p) : nombrePersonneMax(nb
     m.grille[p.getX()][p.getY()] = 3;
         m.tabZone[m.nbzonne] = this;
         m.nbzonne++;
+    pos=p;
 }
 
 Boutique::Boutique()

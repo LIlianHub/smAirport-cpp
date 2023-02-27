@@ -58,7 +58,7 @@ void Douanier::getVoisin(int &nombreVoisin, Position voisin[])
     {
         for (int j = posDounier.getX() - 1; j <= posDounier.getX() + 1; j++)
         {
-            std::cout << "x : " << j << " y : " << i << std::endl;
+            //std::cout << "x : " << j << " y : " << i << std::endl;
 
             if (i >= 0 && j >= 0 && i < 20 && j < 20 && m.OnthisCase(j, i) == 1)
             {
@@ -98,11 +98,11 @@ void Douanier::Action()
     {
         // on choisi un voisin au hasard
         double voisinChoisi = Random_MT::genrand_real2() * nbVoisin;
-        std::cout << "Voisin choisi : " << voisin[(int)voisinChoisi].getX() << " - " << voisin[(int)voisinChoisi].getY() << std::endl;
+        //std::cout << "Voisin choisi : " << voisin[(int)voisinChoisi].getX() << " - " << voisin[(int)voisinChoisi].getY() << std::endl;
         // on le controle ou non 3 fois sur 4
         if (Random_MT::genrand_real2() <= 0.75)
         {
-            std::cout << "Controle" << std::endl;
+            //std::cout << "Controle" << std::endl;
             setEnControle(true);
             dureeControleActu = 0;
             personneControlee = voisin[(int)voisinChoisi];
@@ -111,22 +111,22 @@ void Douanier::Action()
     // sinon il se déplace car pas de voisin et il est pas en controle
     else if (nbVoisin == 0 && !getEnControle())
     {
-        std::cout << "Deplacement" << std::endl;
+        //std::cout << "Deplacement" << std::endl;
         DeplacementAleatoire();
     }
 
     // si il est en controle
     else
     {
-        std::cout << "Controle" << std::endl;
+        //std::cout << "Controle" << std::endl;
         if(Random_MT::genrand_real2() < probaControle[dureeControleActu])
         {
-            std::cout << "Fin du controle" << std::endl;
+            //std::cout << "Fin du controle" << std::endl;
             setEnControle(false);
         }
         else
         {
-            std::cout << "Controle en cours" << std::endl;
+            //std::cout << "Controle en cours" << std::endl;
             dureeControleActu++;
         }
     }

@@ -27,4 +27,5 @@ ZoneEmbarquement::ZoneEmbarquement(int nbPersonne, string nom,Position p):nombre
     m.grille[p.getX()][p.getY()] = 5;
     m.tabZone[m.nbzonne] = this;
     m.nbzonne++;
+    pos=p;
 }
