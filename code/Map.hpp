@@ -9,6 +9,7 @@ class Map
 {
     public :
     int nbpersonne;
+    int nbzonne;
     int grille[20][20];
     Personne *tabpers[25];
     Zone *tabZone[25];

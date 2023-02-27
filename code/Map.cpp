@@ -2,7 +2,7 @@
 #include "Map.hpp"
 
 
-Map::Map(): nbpersonne{0}{
+Map::Map(): nbpersonne{0},nbzonne{0}{
 
     for(int i = 0; i < 20 ; i++){
         for(int j = 0; j < 20 ; j++){

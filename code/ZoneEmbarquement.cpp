@@ -25,4 +25,6 @@ ZoneEmbarquement::ZoneEmbarquement(){
 ZoneEmbarquement::ZoneEmbarquement(int nbPersonne, string nom,Position p):nombrePersonneMax(nbPersonne),nombrePersonneActuelle(0),nomZoneEmbarquement(nom){
     //compteur++;
     m.grille[p.getX()][p.getY()] = 5;
+    m.tabZone[m.nbzonne] = this;
+    m.nbzonne++;
 }

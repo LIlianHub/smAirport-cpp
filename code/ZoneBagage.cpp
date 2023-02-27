@@ -13,6 +13,8 @@ ZoneBagage::ZoneBagage()
 ZoneBagage::ZoneBagage(Position p){
     //compteur++;
     m.grille[p.getX()][p.getY()] = 4;
+        m.tabZone[m.nbzonne] = this;
+    m.nbzonne++;
 }
 
 

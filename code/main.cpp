@@ -46,7 +46,7 @@ int main(int, char **) {
     persd.getVoisin(test, info);
 
       m.tabpers[0]->deplacerPersonne(Position(0,temps));
-      //m.tabpers[1]->deplacerPersonne(Position(1,temps));
+      m.tabpers[1]->deplacerPersonne(Position(1,temps));
       m.tabpers[1]->Action();
       m.tabpers[0]->Action();
 
