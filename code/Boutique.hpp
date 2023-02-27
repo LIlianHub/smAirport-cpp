@@ -15,6 +15,7 @@ public:
     int getNbPersonneMax();
     int getNbPersonneActuelle();
     string getnomBoutique();
+    
 
 public:
     Boutique(int, string);

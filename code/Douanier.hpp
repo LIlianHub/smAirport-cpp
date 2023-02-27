@@ -20,7 +20,7 @@ public:
         void getVoisin(int &, Position[]);
         bool getEnControle();
         void setEnControle(bool);
-        void Action();
+        void Action(int &nombreVoisin, Position voisin[]);
 };
 
 const double probaControle[8] = {0.6, 0.2, 0.1, 0.05, 0.05};

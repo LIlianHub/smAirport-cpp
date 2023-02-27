@@ -43,9 +43,10 @@ void Douanier::setEnControle(bool valControle)
     enControle = valControle;
 }
 
-void Douanier::Action()
+void Douanier::Action(int &nombreVoisin, Position voisin[])
 {
-    std::cout << "Hupla" << std::endl;
+    std::cout << "HuplaDouanier" << std::endl;
+    getVoisin(nombreVoisin, voisin);
 }
 
 Douanier::~Douanier() {}
