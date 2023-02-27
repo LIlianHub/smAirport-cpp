@@ -8,8 +8,8 @@ Douanier::Douanier(std::string nom, std::string prenom) : Personne(nom, prenom),
 }
 Douanier::Douanier() {}
 
-Douanier::Douanier(Position p):Personne(p){
-    
+Douanier::Douanier(Position p) : Personne(p)
+{
 }
 
 // Fonction
@@ -19,14 +19,11 @@ void Douanier::getVoisin(int &nombreVoisin, Position voisin[])
     // tableau voisin de taille 8 = taille max des voisins possibles
     int curseur = 0;
     Position posDounier = getPos();
-    int info;
-
     for (int i = posDounier.getY() - 1; i <= posDounier.getY() + 1; i++)
     {
-        for (int j = posDounier.getX(); j <= posDounier.getX() + 1; j++)
+        for (int j = posDounier.getX() - 1; j <= posDounier.getX() + 1; j++)
         {
-            info = m.OnthisCase(i, j);
-            if (info == 1 && i != posDounier.getY() && j != posDounier.getX())
+            if (i >= 0 && j >= 0 && i < 20 && j < 20 && m.OnthisCase(i, j) == 1)
             {
                 voisin[curseur] = Position(j, i);
                 curseur++;
@@ -46,8 +43,9 @@ void Douanier::setEnControle(bool valControle)
     enControle = valControle;
 }
 
-void Douanier::Action(){
+void Douanier::Action()
+{
     std::cout << "Hupla" << std::endl;
 }
 
-Douanier::~Douanier(){}
+Douanier::~Douanier() {}
