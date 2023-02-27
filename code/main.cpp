@@ -43,7 +43,7 @@ int main(int, char **) {
 
   while (temps < 20)
   {
-    persd.getVoisin(test, info);
+    //persd.getVoisin(test, info);
 
       m.tabpers[0]->deplacerPersonne(Position(0,temps));
       m.tabpers[1]->deplacerPersonne(Position(1,temps));
