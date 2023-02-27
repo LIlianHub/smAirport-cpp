@@ -1,7 +1,8 @@
 #include <iostream>     // Inclusion d'un fichier standard
 #include "Douanier.hpp" // Inclusion d'un fichier du répertoire courant
 
-// Constructeur
+// Constructeur et Destructeur
+
 
 Douanier::Douanier(std::string nom, std::string prenom) : Personne(nom, prenom), enControle{false}
 {
@@ -11,6 +12,14 @@ Douanier::Douanier() {}
 Douanier::Douanier(Position p) : Personne(p)
 {
 }
+
+Douanier::~Douanier() {}
+
+// Probabilité de contrôle
+
+
+
+
 
 // Fonction
 
@@ -59,10 +68,20 @@ void Douanier::Action()
         std::cout << "Voisin : " << voisin[i].getX() << " " << voisin[i].getY() << std::endl;
     }
 
-    if(nbVoisin != 0){
-        setEnControle(true);
-        personneControlee = voisin[0];
+    //si ila a un voisin et qu'il n'est pas en controle
+    if (nbVoisin != 0 && !getEnControle())
+    {
+        //on choisi un voisin au hasard
+        double voisinChoisi = Random_MT::genrand_real2() * nbVoisin;
+        std::cout << "Voisin choisi : " << voisin[(int)voisinChoisi].getX() << " - " << voisin[(int)voisinChoisi].getY() << std::endl;
+        //on le controle ou non 3 fois sur 4
+        if (Random_MT::genrand_real2() <= 0.75)
+        {
+            std::cout << "Controle" << std::endl;
+            setEnControle(true);
+            personneControlee = voisin[(int)voisinChoisi];
+        }
+        
     }
 }
 
-Douanier::~Douanier() {}

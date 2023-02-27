@@ -4,6 +4,7 @@
 #include "Personne.hpp"
 #include "Position.hpp"
 #include "Map.hpp"
+#include "Random_MT.hpp"
 
 class Douanier : public Personne
 {
