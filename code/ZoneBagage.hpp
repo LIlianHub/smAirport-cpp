@@ -1,7 +1,9 @@
 #ifndef _ZONEBAGAGE
 #define _ZONEBAGAGE
 
-class ZoneBagage
+#include "Zone.hpp"
+
+class ZoneBagage : public Zone 
 {
 
 public:

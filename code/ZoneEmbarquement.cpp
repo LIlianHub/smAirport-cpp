@@ -20,6 +20,7 @@ ZoneEmbarquement::ZoneEmbarquement(){
     nomZoneEmbarquement="Boutique"/*+compteur*/;
 }
 
-ZoneEmbarquement::ZoneEmbarquement(int nbPersonne, string nom):nombrePersonneMax(nbPersonne),nombrePersonneActuelle(0),nomZoneEmbarquement(nom){
+ZoneEmbarquement::ZoneEmbarquement(int nbPersonne, string nom,Position p):nombrePersonneMax(nbPersonne),nombrePersonneActuelle(0),nomZoneEmbarquement(nom){
     //compteur++;
+    m.grille[p.x][p.y] = 5;
 }

@@ -2,10 +2,11 @@
 #define BOUTIQUE_GUARD
 
 #include <iostream>
+#include "Zone.hpp"
 
 using std::string;
 
-class Boutique
+class Boutique : public Zone
 {
     int nombrePersonneMax;
     string nomBoutique;

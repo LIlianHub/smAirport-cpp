@@ -2,10 +2,11 @@
 #define ZONEEMBARQUEMENT_GUARD
 #include <iostream>
 #include "FileAttente.hpp"
+#include "Zone.hpp"
 
 using std::string;
 
-class ZoneEmbarquement{
+class ZoneEmbarquement : public Zone{
     int nombrePersonneMax;
     int nombrePersonneActuelle;
     string nomZoneEmbarquement;

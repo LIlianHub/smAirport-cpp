@@ -18,7 +18,14 @@ int main(int, char **) {
   Douanier persd(Position(1,0));
   m.ajouterPers(&pers);
   m.ajouterPers(&persd);
+  m.grille[12][8] = 3;
   m.grille[12][13] = 3;
+  m.grille[12][13] = 3;
+  m.grille[7][7] = 3;
+  m.grille[2][19] = 4;
+  m.grille[4][19] = 4;
+  m.grille[15][19] = 5;
+  m.grille[17][19] = 5;
   int temps = 0;
 
   int test;
@@ -28,13 +35,13 @@ int main(int, char **) {
   while (temps < 20)
   {
     persd.getVoisin(test, info);
-    
+
       m.tabpers[0]->deplacerPersonne(Position(0,temps));
       //m.tabpers[1]->deplacerPersonne(Position(1,temps));
       m.tabpers[1]->Action();
       m.tabpers[0]->Action();
 
-    //system("clear");
+    system("clear");
     m.AfficherMap();
     std::cout << temps << std::endl;
     temps++;

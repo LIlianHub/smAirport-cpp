@@ -2,6 +2,7 @@
 #define _MAP
 
 #include "Personne.hpp"
+#include "Zone.hpp"
 #include "Visiteur.hpp"
 
 class Map
@@ -10,6 +11,7 @@ class Map
     int nbpersonne;
     int grille[20][20];
     Personne *tabpers[25];
+    Zone *tabZone[25];
 
     public:
         Map();
