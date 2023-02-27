@@ -3,6 +3,7 @@
 #include <iostream>
 #include "FileAttente.hpp"
 #include "Zone.hpp"
+#include "Position.hpp"
 
 using std::string;
 
@@ -16,7 +17,7 @@ class ZoneEmbarquement : public Zone{
         int getNombrePersonneMax();
         int getNbPersonneActuelle();
         string getnomZoneEmarquement();
-        ZoneEmbarquement(int nombrePersonne, string nom);
+        ZoneEmbarquement(int nombrePersonne, string nom,Position p);
         ZoneEmbarquement();
 };
 

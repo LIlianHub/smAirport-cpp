@@ -1,4 +1,6 @@
 #include "ZoneEmbarquement.hpp"
+#include "Map.hpp"
+extern Map m;
 
 int ZoneEmbarquement::getNombrePersonneMax(){
     return nombrePersonneMax;
@@ -22,5 +24,5 @@ ZoneEmbarquement::ZoneEmbarquement(){
 
 ZoneEmbarquement::ZoneEmbarquement(int nbPersonne, string nom,Position p):nombrePersonneMax(nbPersonne),nombrePersonneActuelle(0),nomZoneEmbarquement(nom){
     //compteur++;
-    m.grille[p.x][p.y] = 5;
+    m.grille[p.getX()][p.getY()] = 5;
 }
