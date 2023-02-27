@@ -14,7 +14,7 @@ Douanier::Douanier(Position p) : Personne(p)
 
 Douanier::~Douanier() {}
 
-// Probabilité de contrôle
+
 
 void Douanier::DeplacementAleatoire()
 {
@@ -104,20 +104,30 @@ void Douanier::Action()
         {
             std::cout << "Controle" << std::endl;
             setEnControle(true);
+            dureeControleActu = 0;
             personneControlee = voisin[(int)voisinChoisi];
         }
     }
     // sinon il se déplace car pas de voisin et il est pas en controle
-    else if(nbVoisin == 0 && !getEnControle())
+    else if (nbVoisin == 0 && !getEnControle())
     {
         std::cout << "Deplacement" << std::endl;
         DeplacementAleatoire();
     }
 
     // si il est en controle
-    else{
+    else
+    {
         std::cout << "Controle" << std::endl;
-        
+        if(Random_MT::genrand_real2() < probaControle[dureeControleActu])
+        {
+            std::cout << "Fin du controle" << std::endl;
+            setEnControle(false);
+        }
+        else
+        {
+            std::cout << "Controle en cours" << std::endl;
+            dureeControleActu++;
+        }
     }
-
 }

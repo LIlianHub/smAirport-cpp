@@ -10,6 +10,7 @@ class Douanier : public Personne
 {
         bool enControle;
         Position personneControlee;
+        int dureeControleActu = 0;
 
 public:
         Douanier();
@@ -26,6 +27,10 @@ private:
         void DeplacementAleatoire();
 };
 
-const double probaControle[8] = {0.6, 0.2, 0.1, 0.05, 0.05};
+// Probabilité fin de controle en fonction du temps
+
+const double probaControle[8] = {0.2, 0.3, 0.5, 1};
+
+//la map
 extern Map m;
 #endif
