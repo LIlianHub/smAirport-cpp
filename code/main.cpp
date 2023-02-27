@@ -17,7 +17,7 @@ int main(int, char **) {
   Visiteur pers(Position(0,0));
   Douanier persd(Position(1,0));
   m.ajouterPers(&pers);
-  //m.ajouterPers(&persd);
+  m.ajouterPers(&persd);
   m.grille[12][13] = 3;
   int temps = 0;
 
@@ -29,11 +29,11 @@ int main(int, char **) {
   {
     persd.getVoisin(test, info);
     
-    for(int i=0;i<m.nbpersonne;i++){
-      bool marche = m.tabpers[i]->deplacerPersonne(Position(0,temps));
-      std::cout << "position" <<  m.tabpers[i]->getPos().getY() << std::endl;
-      //m.tabpers[i]->Action();
-    }
+      m.tabpers[0]->deplacerPersonne(Position(0,temps));
+      //m.tabpers[1]->deplacerPersonne(Position(1,temps));
+      m.tabpers[1]->Action();
+      m.tabpers[0]->Action();
+
     //system("clear");
     m.AfficherMap();
     std::cout << temps << std::endl;
