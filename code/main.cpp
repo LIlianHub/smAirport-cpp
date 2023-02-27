@@ -6,6 +6,7 @@
 #include "Position.hpp"
 #include "Visiteur.hpp"
 #include "Douanier.hpp"
+#include "Random_MT.hpp"
 
 using std::endl;
 using std::cout;
@@ -14,8 +15,14 @@ Map m{};
 
 int main(int, char **) {
 
+    unsigned long         init[4]={0x123, 0x234, 0x345, 0x456},
+                          length=4;
+
+  Random_MT::init_by_array(init, length);
+
   Visiteur pers(Position(0,0));
   Douanier persd(Position(1,0));
+
   m.ajouterPers(&pers);
   m.ajouterPers(&persd);
   m.grille[12][8] = 3;
