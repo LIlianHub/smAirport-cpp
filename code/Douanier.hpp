@@ -8,19 +8,19 @@
 class Douanier : public Personne
 {
         bool enControle;
+        Position personneControlee;
 
 public:
         Douanier();
         Douanier(std::string, std::string);
         Douanier(Position p);
         ~Douanier();
-        
 
 public:
         void getVoisin(int &, Position[]);
         bool getEnControle();
         void setEnControle(bool);
-        void Action(int &nombreVoisin, Position voisin[]);
+        void Action();
 };
 
 const double probaControle[8] = {0.6, 0.2, 0.1, 0.05, 0.05};

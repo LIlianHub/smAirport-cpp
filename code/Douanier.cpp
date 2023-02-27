@@ -17,13 +17,16 @@ Douanier::Douanier(Position p) : Personne(p)
 void Douanier::getVoisin(int &nombreVoisin, Position voisin[])
 {
     // tableau voisin de taille 8 = taille max des voisins possibles
+    nombreVoisin = 0;
     int curseur = 0;
     Position posDounier = getPos();
     for (int i = posDounier.getY() - 1; i <= posDounier.getY() + 1; i++)
     {
         for (int j = posDounier.getX() - 1; j <= posDounier.getX() + 1; j++)
         {
-            if (i >= 0 && j >= 0 && i < 20 && j < 20 && m.OnthisCase(i, j) == 1)
+            std::cout << "x : " << j << " y : " << i << std::endl;
+
+            if (i >= 0 && j >= 0 && i < 20 && j < 20 && m.OnthisCase(j, i) == 1)
             {
                 voisin[curseur] = Position(j, i);
                 curseur++;
@@ -43,10 +46,23 @@ void Douanier::setEnControle(bool valControle)
     enControle = valControle;
 }
 
-void Douanier::Action(int &nombreVoisin, Position voisin[])
+void Douanier::Action()
 {
     std::cout << "HuplaDouanier" << std::endl;
-    getVoisin(nombreVoisin, voisin);
+    Position voisin[8];
+    int nbVoisin = 0;
+
+    getVoisin(nbVoisin, voisin);
+
+    for (int i = 0; i < nbVoisin; i++)
+    {
+        std::cout << "Voisin : " << voisin[i].getX() << " " << voisin[i].getY() << std::endl;
+    }
+
+    if(nbVoisin != 0){
+        setEnControle(true);
+        personneControlee = voisin[0];
+    }
 }
 
 Douanier::~Douanier() {}
