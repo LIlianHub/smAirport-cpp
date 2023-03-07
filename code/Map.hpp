@@ -19,6 +19,7 @@ class Map
         void AfficherMap();
         int OnthisCase(int,int);
         bool ajouterPers(Personne * p);
+        void deletePers(Personne *p);
 };
 
 #endif

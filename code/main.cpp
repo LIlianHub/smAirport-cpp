@@ -36,7 +36,7 @@ int main(int, char **) {
   m.ajouterPers(&persd);
 
   int temps = 0;
-
+  int result;
   int test;
   Position info[9];
 
@@ -44,11 +44,19 @@ int main(int, char **) {
   while (temps < 50)
   {
     //persd.getVoisin(test, info);
-
+    for(int i=0;i<m.nbpersonne;i++){
+      result=m.tabpers[i]->Action();
+      if(result==1){
+        m.deletePers(m.tabpers[0]);
+      }
+    }
       //m.tabpers[0]->deplacerPersonne(Position(0,temps));
       //m.tabpers[1]->deplacerPersonne(Position(1,temps));
-      m.tabpers[1]->Action();
-      m.tabpers[0]->Action();
+      //m.tabpers[1]->Action();
+      // result=m.tabpers[0]->Action();
+      // if(result==1){
+      //   m.deletePers(m.tabpers[0]);
+      // }
 
     system("clear");
     m.AfficherMap();

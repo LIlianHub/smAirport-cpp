@@ -18,6 +18,8 @@ class Visiteur : public Personne {
     Position posBagagesVoulu{-1,-1};
     Position posZEVoulu{-1,-1};
     bool estControlle;
+    bool arrive=false;
+
 
     public:
         int getBagage();
@@ -27,7 +29,7 @@ class Visiteur : public Personne {
         Visiteur(std::string name,std::string prename,int,int);
         Visiteur();
         Visiteur(Position p);
-        void Action();
+        int Action();
         ~Visiteur();
 
 };

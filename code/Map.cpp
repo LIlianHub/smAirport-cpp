@@ -76,3 +76,14 @@ bool Map::ajouterPers(Personne * p){
     }
     return retour;
 }
+
+void Map::deletePers(Personne *p){
+    Personne *temp=tabpers[nbpersonne-1];
+    for(int i=0;i<nbpersonne;i++){
+        if(tabpers[i]==p){
+            tabpers[i]=temp;
+            tabpers[nbpersonne-1]=nullptr;
+            nbpersonne--;
+        }
+    }
+}

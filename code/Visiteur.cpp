@@ -18,6 +18,7 @@ Visiteur::Visiteur(std::string name,std::string prename,int nbbag,int nbbud) : P
     nbBagage = nbbag;
     budget = nbbud;
     aDeposeBagages=false;
+    arrive=false;
 }
 void Visiteur::setBudget(int bud){
     budget = bud;
@@ -33,7 +34,7 @@ Visiteur::Visiteur(){
 
 Visiteur::Visiteur(Position p):Personne(p){}
 
-void Visiteur::Action(){
+int Visiteur::Action(){
     int cpt;
     double rand;
     if(posBoutiqueVoulu.getX()==-1&&posBoutiqueVoulu.getY()==-1){
@@ -86,7 +87,11 @@ void Visiteur::Action(){
     }
     tempsAvantVol=40;
     rand=Random_MT::genrand_real2();
-    if(tempsAvantVol>40){
+    if(arrive==true){
+        m.grille[getPos().getX()][getPos().getY()]=0;
+        return 1;
+        //std::cout<<"Arrivé"<<std::endl;
+    }else if(tempsAvantVol>40){
         if(rand<=0.75){
             //std::cout << "Je go boutique" << std::endl;
             //std::cout<<"Pos X"<<posBoutiqueVoulu.getX()<<" Pos Y"<<posBoutiqueVoulu.getY()<<std::endl;
@@ -115,14 +120,22 @@ void Visiteur::Action(){
             //std::cout << "Je go zone embarquement" << std::endl;
             //std::cout<<"Pos X"<<posZEVoulu.getX()<<" Pos Y"<<posZEVoulu.getY()<<std::endl;
             deplacerPersonne(posZEVoulu);
+            if(getPos().getX()==posZEVoulu.getX()&&getPos().getY()==posZEVoulu.getY()){
+                arrive=true;
+                //m.grille[getPos().getX()][getPos().getY()]=0;
+            }
         }
     }else{
         //std::cout << "Je go zone embarquement" << std::endl;
         //std::cout<<"Pos X"<<posZEVoulu.getX()<<" Pos Y"<<posZEVoulu.getY()<<std::endl;
         deplacerPersonne(posZEVoulu);
+        if(getPos().getX()==posZEVoulu.getX()&&getPos().getY()==posZEVoulu.getY()){
+                arrive=true;    
+        }
 
     }
     tempsAvantVol-=1;
+    return 0;
     //std::cout << "HuplaVisteur" << std::endl;
 }
 

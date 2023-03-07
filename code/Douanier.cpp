@@ -80,7 +80,7 @@ void Douanier::setEnControle(bool valControle)
     enControle = valControle;
 }
 
-void Douanier::Action()
+int Douanier::Action()
 {
     // std::cout << "HuplaDouanier" << std::endl;
     Position voisin[8];
@@ -130,4 +130,5 @@ void Douanier::Action()
             dureeControleActu++;
         }
     }
+    return 0;
 }

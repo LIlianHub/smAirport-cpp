@@ -17,7 +17,7 @@ public:
         Douanier(std::string, std::string);
         Douanier(Position p);
         ~Douanier();
-        void Action();
+        int Action();
         
 
 private:

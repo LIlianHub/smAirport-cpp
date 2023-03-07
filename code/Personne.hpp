@@ -20,7 +20,7 @@ class Personne {
         std::string getprenom();
         int getid();
         Position getPos();
-        virtual void Action() {};
+        virtual int Action() {};
         virtual ~Personne();
 
 
