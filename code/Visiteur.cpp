@@ -85,37 +85,37 @@ void Visiteur::Action(){
     rand=Random_MT::genrand_real2();
     if(tempsAvantVol>40){
         if(rand<=0.75){
-            std::cout << "Je go boutique" << std::endl;
-            std::cout<<"Pos X"<<posBoutiqueVoulu.getX()<<" Pos Y"<<posBoutiqueVoulu.getY()<<std::endl;
+            //std::cout << "Je go boutique" << std::endl;
+            //std::cout<<"Pos X"<<posBoutiqueVoulu.getX()<<" Pos Y"<<posBoutiqueVoulu.getY()<<std::endl;
             deplacerPersonne(posBoutiqueVoulu);
         }else if(!aDeposeBagages){
-            std::cout << "Je go bagages" << std::endl;
-            std::cout<<"Pos X"<<posBagagesVoulu.getX()<<" Pos Y"<<posBagagesVoulu.getY()<<std::endl;
+            //std::cout << "Je go bagages" << std::endl;
+            //std::cout<<"Pos X"<<posBagagesVoulu.getX()<<" Pos Y"<<posBagagesVoulu.getY()<<std::endl;
             deplacerPersonne(posBagagesVoulu);
             if(getPos().getX()==posBagagesVoulu.getX()&&getPos().getY()==posBagagesVoulu.getY()){
                 aDeposeBagages=true;
             }
         }else{
-            std::cout << "Je go zone embarquement" << std::endl;
-            std::cout<<"Pos X"<<posZEVoulu.getX()<<" Pos Y"<<posZEVoulu.getY()<<std::endl;
+            //std::cout << "Je go zone embarquement" << std::endl;
+            //std::cout<<"Pos X"<<posZEVoulu.getX()<<" Pos Y"<<posZEVoulu.getY()<<std::endl;
             deplacerPersonne(posZEVoulu);
         }
     }else if(tempsAvantVol>20){
         if(!aDeposeBagages){
-            std::cout << "Je go bagages" << std::endl;
-            std::cout<<"Pos X"<<posBagagesVoulu.getX()<<" Pos Y"<<posBagagesVoulu.getY()<<std::endl;
+            //std::cout << "Je go bagages" << std::endl;
+            //std::cout<<"Pos X"<<posBagagesVoulu.getX()<<" Pos Y"<<posBagagesVoulu.getY()<<std::endl;
             deplacerPersonne(posBagagesVoulu);
             if(getPos().getX()==posBagagesVoulu.getX()&&getPos().getY()==posBagagesVoulu.getY()){
                 aDeposeBagages=true;
             }
         }else{
-            std::cout << "Je go zone embarquement" << std::endl;
-            std::cout<<"Pos X"<<posZEVoulu.getX()<<" Pos Y"<<posZEVoulu.getY()<<std::endl;
+            //std::cout << "Je go zone embarquement" << std::endl;
+            //std::cout<<"Pos X"<<posZEVoulu.getX()<<" Pos Y"<<posZEVoulu.getY()<<std::endl;
             deplacerPersonne(posZEVoulu);
         }
     }else{
-        std::cout << "Je go zone embarquement" << std::endl;
-        std::cout<<"Pos X"<<posZEVoulu.getX()<<" Pos Y"<<posZEVoulu.getY()<<std::endl;
+        //std::cout << "Je go zone embarquement" << std::endl;
+        //std::cout<<"Pos X"<<posZEVoulu.getX()<<" Pos Y"<<posZEVoulu.getY()<<std::endl;
         deplacerPersonne(posZEVoulu);
 
     }

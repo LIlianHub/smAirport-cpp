@@ -47,10 +47,10 @@ int main(int, char **) {
 
       //m.tabpers[0]->deplacerPersonne(Position(0,temps));
       //m.tabpers[1]->deplacerPersonne(Position(1,temps));
-      //m.tabpers[1]->Action();
+      m.tabpers[1]->Action();
       m.tabpers[0]->Action();
 
-    //system("clear");
+    system("clear");
     m.AfficherMap();
     //std::cout << temps << std::endl;
     temps++;
