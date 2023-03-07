@@ -121,6 +121,7 @@ int Douanier::Action()
                 dureeControleActu = 0;
                 // visiteur controllé
                 personneControle->setEstControl(true);
+                std::cout << "Je sens qu'il va y avoir un controle de poliiiiiiice" << std::endl;
             }
             else{
                 personneControle = nullptr;
@@ -130,7 +131,7 @@ int Douanier::Action()
     // sinon il se déplace car pas de voisin et il est pas en controle
     else if (nbVoisin == 0 && !getEnControle())
     {
-        //std::cout << "Deplacement" << std::endl;
+        std::cout << "Deplacement" << std::endl;
         DeplacementAleatoire();
     }
 
@@ -140,14 +141,14 @@ int Douanier::Action()
         //std::cout << "Controle" << std::endl;
         if(Random_MT::genrand_real2() < probaControle[dureeControleActu])
         {
-            //std::cout << "Fin du controle" << std::endl;
+            std::cout << "Fin du controle" << std::endl;
             setEnControle(false);
             personneControle->setEstControl(false);
             personneControle = nullptr;
         }
         else
         {
-            //std::cout << "Controle en cours" << std::endl;
+            std::cout << "Controle en cours" << std::endl;
             dureeControleActu++;
         }
     }

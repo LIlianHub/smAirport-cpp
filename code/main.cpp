@@ -58,7 +58,7 @@ int main(int, char **) {
       //   m.deletePers(m.tabpers[0]);
       // }
 
-    system("clear");
+    //system("clear");
     m.AfficherMap();
     //std::cout << temps << std::endl;
     temps++;
