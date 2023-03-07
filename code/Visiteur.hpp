@@ -17,7 +17,7 @@ class Visiteur : public Personne {
     Position posBoutiqueVoulu{-1,-1};
     Position posBagagesVoulu{-1,-1};
     Position posZEVoulu{-1,-1};
-    bool estControlle;
+    bool estControlle=false;
     bool arrive=false;
 
 
