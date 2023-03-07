@@ -59,7 +59,7 @@ bool Personne::deplacerPersonne(Position p1){
                 futurpos.setY(futurpos.getY()-1);
             }
         }
-        if(m.OnthisCase(futurpos.getX(),futurpos.getY())==1){
+        if(m.OnthisCase(futurpos.getX(),futurpos.getY())!=0){
             retour=false;
         }else{
             m.grille[pos.getX()][pos.getY()]=0;

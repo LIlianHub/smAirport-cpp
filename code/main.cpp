@@ -24,7 +24,7 @@ int main(int, char **) {
   Random_MT::init_by_array(init, length);
 
   Visiteur pers(Position(0,0));
-  Douanier persd(Position(1,0));
+  Douanier persd(Position(2,0));
   ZoneEmbarquement ze1(100,"zonne emba 1",Position(15,19));
   ZoneEmbarquement ze2(100,"zonne emba 2",Position(17,19));
   ZoneBagage zb1(Position(2,19));
