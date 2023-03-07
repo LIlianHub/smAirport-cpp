@@ -14,7 +14,17 @@ Douanier::Douanier(Position p) : Personne(p)
 
 Douanier::~Douanier() {}
 
-
+Personne *  Douanier::getVisiteurWithPos(Position p){
+    Personne * retour = nullptr;
+    Position temp;
+    for(int i = 0; i < m.nbpersonne; i++){
+        temp = m.tabpers[i]->getPos();
+        if(temp.getX() == p.getX() && temp.getY() == p.getY()){
+            retour = m.tabpers[i];
+        }
+    }
+    return retour;
+}
 
 void Douanier::DeplacementAleatoire()
 {
@@ -103,9 +113,18 @@ int Douanier::Action()
         if (Random_MT::genrand_real2() <= 0.75)
         {
             //std::cout << "Controle" << std::endl;
-            setEnControle(true);
-            dureeControleActu = 0;
-            personneControlee = voisin[(int)voisinChoisi];
+            personneControle = (Visiteur*)getVisiteurWithPos(voisin[(int)voisinChoisi]);
+            // si pas deja en cours de controle
+            if(!personneControle->getEstControl()){
+                // douanier en controle
+                setEnControle(true);
+                dureeControleActu = 0;
+                // visiteur controllé
+                personneControle->setEstControl(true);
+            }
+            else{
+                personneControle = nullptr;
+            }
         }
     }
     // sinon il se déplace car pas de voisin et il est pas en controle
@@ -123,6 +142,8 @@ int Douanier::Action()
         {
             //std::cout << "Fin du controle" << std::endl;
             setEnControle(false);
+            personneControle->setEstControl(false);
+            personneControle = nullptr;
         }
         else
         {

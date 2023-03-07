@@ -5,11 +5,12 @@
 #include "Position.hpp"
 #include "Map.hpp"
 #include "Random_MT.hpp"
+#include "Visiteur.hpp"
 
 class Douanier : public Personne
 {
         bool enControle;
-        Position personneControlee;
+        Visiteur * personneControle = nullptr;
         int dureeControleActu = 0;
 
 public:
@@ -25,6 +26,7 @@ private:
         bool getEnControle();
         void setEnControle(bool);
         void DeplacementAleatoire();
+        Personne *  getVisiteurWithPos(Position);
 };
 
 // Probabilité fin de controle en fonction du temps
