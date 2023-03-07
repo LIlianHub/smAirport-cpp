@@ -41,7 +41,7 @@ int main(int, char **) {
   Position info[9];
 
 
-  while (temps < 50)
+  while (temps < 70)
   {
     //persd.getVoisin(test, info);
     for(int i=0;i<m.nbpersonne;i++){

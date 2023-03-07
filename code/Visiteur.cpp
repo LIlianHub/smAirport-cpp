@@ -87,52 +87,55 @@ int Visiteur::Action(){
     }
     tempsAvantVol=40;
     rand=Random_MT::genrand_real2();
-    if(arrive==true){
-        m.grille[getPos().getX()][getPos().getY()]=0;
-        return 1;
-        //std::cout<<"Arrivé"<<std::endl;
-    }else if(tempsAvantVol>40){
-        if(rand<=0.75){
-            //std::cout << "Je go boutique" << std::endl;
-            //std::cout<<"Pos X"<<posBoutiqueVoulu.getX()<<" Pos Y"<<posBoutiqueVoulu.getY()<<std::endl;
-            deplacerPersonne(posBoutiqueVoulu);
-        }else if(!aDeposeBagages){
-            //std::cout << "Je go bagages" << std::endl;
-            //std::cout<<"Pos X"<<posBagagesVoulu.getX()<<" Pos Y"<<posBagagesVoulu.getY()<<std::endl;
-            deplacerPersonne(posBagagesVoulu);
-            if(getPos().getX()==posBagagesVoulu.getX()&&getPos().getY()==posBagagesVoulu.getY()){
-                aDeposeBagages=true;
+    if(estControlle == false){
+
+        if(arrive==true){
+            m.grille[getPos().getX()][getPos().getY()]=0;
+            return 1;
+            //std::cout<<"Arrivé"<<std::endl;
+        }else if(tempsAvantVol>40){
+            if(rand<=0.75){
+                //std::cout << "Je go boutique" << std::endl;
+                //std::cout<<"Pos X"<<posBoutiqueVoulu.getX()<<" Pos Y"<<posBoutiqueVoulu.getY()<<std::endl;
+                deplacerPersonne(posBoutiqueVoulu);
+            }else if(!aDeposeBagages){
+                //std::cout << "Je go bagages" << std::endl;
+                //std::cout<<"Pos X"<<posBagagesVoulu.getX()<<" Pos Y"<<posBagagesVoulu.getY()<<std::endl;
+                deplacerPersonne(posBagagesVoulu);
+                if(getPos().getX()==posBagagesVoulu.getX()&&getPos().getY()==posBagagesVoulu.getY()){
+                    aDeposeBagages=true;
+                }
+            }else{
+                //std::cout << "Je go zone embarquement" << std::endl;
+                //std::cout<<"Pos X"<<posZEVoulu.getX()<<" Pos Y"<<posZEVoulu.getY()<<std::endl;
+                deplacerPersonne(posZEVoulu);
             }
-        }else{
-            //std::cout << "Je go zone embarquement" << std::endl;
-            //std::cout<<"Pos X"<<posZEVoulu.getX()<<" Pos Y"<<posZEVoulu.getY()<<std::endl;
-            deplacerPersonne(posZEVoulu);
-        }
-    }else if(tempsAvantVol>20){
-        if(!aDeposeBagages){
-            //std::cout << "Je go bagages" << std::endl;
-            //std::cout<<"Pos X"<<posBagagesVoulu.getX()<<" Pos Y"<<posBagagesVoulu.getY()<<std::endl;
-            deplacerPersonne(posBagagesVoulu);
-            if(getPos().getX()==posBagagesVoulu.getX()&&getPos().getY()==posBagagesVoulu.getY()){
-                aDeposeBagages=true;
+        }else if(tempsAvantVol>20){
+            if(!aDeposeBagages){
+                //std::cout << "Je go bagages" << std::endl;
+                //std::cout<<"Pos X"<<posBagagesVoulu.getX()<<" Pos Y"<<posBagagesVoulu.getY()<<std::endl;
+                deplacerPersonne(posBagagesVoulu);
+                if(getPos().getX()==posBagagesVoulu.getX()&&getPos().getY()==posBagagesVoulu.getY()){
+                    aDeposeBagages=true;
+                }
+            }else{
+                //std::cout << "Je go zone embarquement" << std::endl;
+                //std::cout<<"Pos X"<<posZEVoulu.getX()<<" Pos Y"<<posZEVoulu.getY()<<std::endl;
+                deplacerPersonne(posZEVoulu);
+                if(getPos().getX()==posZEVoulu.getX()&&getPos().getY()==posZEVoulu.getY()){
+                    arrive=true;
+                    //m.grille[getPos().getX()][getPos().getY()]=0;
+                }
             }
         }else{
             //std::cout << "Je go zone embarquement" << std::endl;
             //std::cout<<"Pos X"<<posZEVoulu.getX()<<" Pos Y"<<posZEVoulu.getY()<<std::endl;
             deplacerPersonne(posZEVoulu);
             if(getPos().getX()==posZEVoulu.getX()&&getPos().getY()==posZEVoulu.getY()){
-                arrive=true;
-                //m.grille[getPos().getX()][getPos().getY()]=0;
+                    arrive=true;    
             }
-        }
-    }else{
-        //std::cout << "Je go zone embarquement" << std::endl;
-        //std::cout<<"Pos X"<<posZEVoulu.getX()<<" Pos Y"<<posZEVoulu.getY()<<std::endl;
-        deplacerPersonne(posZEVoulu);
-        if(getPos().getX()==posZEVoulu.getX()&&getPos().getY()==posZEVoulu.getY()){
-                arrive=true;    
-        }
 
+        }
     }
     tempsAvantVol-=1;
     return 0;
@@ -140,3 +143,12 @@ int Visiteur::Action(){
 }
 
 Visiteur::~Visiteur(){}
+
+
+bool Visiteur::getEstControl(){
+    return estControlle;
+}
+
+void Visiteur::setEstControl(bool ctrl){
+    estControlle = ctrl;
+}

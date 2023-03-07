@@ -31,6 +31,8 @@ class Visiteur : public Personne {
         Visiteur(Position p);
         int Action();
         ~Visiteur();
+        bool getEstControl();
+        void setEstControl(bool);
 
 };
 
