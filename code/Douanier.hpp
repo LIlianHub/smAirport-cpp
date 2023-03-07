@@ -12,6 +12,8 @@ class Douanier : public Personne
         bool enControle;
         Visiteur * personneControle = nullptr;
         int dureeControleActu = 0;
+        Visiteur * dejaControlle[50];
+        int nbPersonneControlle = 0;
 
 public:
         Douanier();
@@ -27,6 +29,7 @@ private:
         void setEnControle(bool);
         void DeplacementAleatoire();
         Personne *  getVisiteurWithPos(Position);
+        bool checkAlreadyControle(Visiteur *);
 };
 
 // Probabilité fin de controle en fonction du temps
