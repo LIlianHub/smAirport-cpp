@@ -48,6 +48,7 @@ void Visiteur::Action(){
         rand=Random_MT::genrand_real2();
         int rang=(cpt-1)*rand;
         posBoutiqueVoulu=tabBoutique[rang]->getPos();
+        posBoutiqueVoulu.setY(posBoutiqueVoulu.getY()-1);
     }
     if(posZEVoulu.getX()==-1&&posZEVoulu.getY()==-1){
         cpt=0;
@@ -67,6 +68,7 @@ void Visiteur::Action(){
         rand=Random_MT::genrand_real2();
         int rang=(cpt-1)*rand;
         posZEVoulu=tabZE[rang]->getPos();
+        posZEVoulu.setY(posZEVoulu.getY()-1);
     }
     if(posBagagesVoulu.getX()==-1&&posBagagesVoulu.getY()==-1){
         cpt=0;
@@ -80,6 +82,7 @@ void Visiteur::Action(){
         rand=Random_MT::genrand_real2();
         int rang=(cpt-1)*rand;
         posBagagesVoulu=tabBagage[rang]->getPos();
+        posBagagesVoulu.setY(posBagagesVoulu.getY()-1);
     }
     tempsAvantVol=40;
     rand=Random_MT::genrand_real2();
