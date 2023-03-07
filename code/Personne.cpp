@@ -44,6 +44,7 @@ void Personne::setPos(Position p){
 bool Personne::deplacerPersonne(Position p1){
     //std::cout << "ici" << std::endl;
     bool retour;
+    bool direction;
     Position futurpos=pos;
     if(p1.getX()>=0&&p1.getY()>=0&&p1.getX()<=20&&p1.getY()<=20){
         if(pos.getX()!=p1.getX()){
@@ -52,15 +53,63 @@ bool Personne::deplacerPersonne(Position p1){
             }else{
                 futurpos.setX(futurpos.getX()-1);
             }
+            direction = true;
         }else if(pos.getY()!=p1.getY()){
             if(pos.getY()-p1.getY()<0){
                 futurpos.setY(futurpos.getY()+1);
             }else{
                 futurpos.setY(futurpos.getY()-1);
             }
+            direction = false;
         }
         if(m.OnthisCase(futurpos.getX(),futurpos.getY())!=0){
-            retour=false;
+            futurpos=pos;
+            if(direction == true){
+                    if(pos.getY()!=p1.getY()){
+                        if(pos.getY()-p1.getY()<0){
+                            futurpos.setY(futurpos.getY()+1);
+                        }else{
+                            futurpos.setY(futurpos.getY()-1);
+                        }
+                         if(m.OnthisCase(futurpos.getX(),futurpos.getY())!=0){
+                            retour = false;
+                         }
+                         else{
+                            m.grille[pos.getX()][pos.getY()]=0;
+                            setPos(futurpos);
+                            if(Visiteur * d = dynamic_cast<Visiteur*>(this)){
+                                m.grille[futurpos.getX()][futurpos.getY()]=1;
+                            }
+                            else{
+                                m.grille[futurpos.getX()][futurpos.getY()]=2;
+                            }
+                            retour=true;
+                        }
+                }
+            }
+            if(direction == false){
+                if(pos.getX()!=p1.getX()){
+                        if(pos.getX()-p1.getX()<0){
+                            futurpos.setX(futurpos.getX()+1);
+                        }else{
+                            futurpos.setX(futurpos.getX()-1);
+                        }
+                        if(m.OnthisCase(futurpos.getX(),futurpos.getY())!=0){
+                            retour = false;
+                         }
+                         else{
+                            m.grille[pos.getX()][pos.getY()]=0;
+                            setPos(futurpos);
+                            if(Visiteur * d = dynamic_cast<Visiteur*>(this)){
+                                m.grille[futurpos.getX()][futurpos.getY()]=1;
+                            }
+                            else{
+                                m.grille[futurpos.getX()][futurpos.getY()]=2;
+                            }
+                            retour=true;
+                        }
+                }
+            }
         }else{
             m.grille[pos.getX()][pos.getY()]=0;
             setPos(futurpos);

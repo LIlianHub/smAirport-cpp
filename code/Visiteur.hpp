@@ -19,6 +19,10 @@ class Visiteur : public Personne {
     Position posZEVoulu{-1,-1};
     bool estControlle=false;
     bool arrive=false;
+    
+    public :
+    bool btk =false;
+    bool gobtk = false;
 
 
     public:
@@ -26,9 +30,9 @@ class Visiteur : public Personne {
         int getBudget();
         void setBudget(int bud);
         void setBagage(int bag);
-        Visiteur(std::string name,std::string prename,int,int);
+        Visiteur(std::string name,std::string prename,int,int,int);
         Visiteur();
-        Visiteur(Position p);
+        Visiteur(Position p,int);
         int Action();
         ~Visiteur();
         bool getEstControl();

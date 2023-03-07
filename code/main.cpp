@@ -23,8 +23,12 @@ int main(int, char **) {
 
   Random_MT::init_by_array(init, length);
 
-  Visiteur pers(Position(0,0));
+  Visiteur pers1(Position(0,0),80);
+  Visiteur pers2(Position(0,15),80);
+  Visiteur pers3(Position(0,9),80);
   Douanier persd(Position(2,0));
+  Douanier persf(Position(10,10));
+
   ZoneEmbarquement ze1(100,"zonne emba 1",Position(15,19));
   ZoneEmbarquement ze2(100,"zonne emba 2",Position(17,19));
   ZoneBagage zb1(Position(2,19));
@@ -32,7 +36,10 @@ int main(int, char **) {
   Boutique b1(100,"boutique 1",Position(12,8));
   Boutique b2(100,"boutique 2",Position(12,13));
   Boutique b3(100,"boutique 3",Position(7,7));
-  m.ajouterPers(&pers);
+  m.ajouterPers(&pers1);
+  m.ajouterPers(&pers2);
+  m.ajouterPers(&pers3);
+  m.ajouterPers(&persf);
   m.ajouterPers(&persd);
 
   int temps = 0;
@@ -41,7 +48,7 @@ int main(int, char **) {
   Position info[9];
 
 
-  while (temps < 50)
+  while (temps < 70)
   {
     //persd.getVoisin(test, info);
     for(int i=0;i<m.nbpersonne;i++){
@@ -60,7 +67,10 @@ int main(int, char **) {
 
     system("clear");
     m.AfficherMap();
-    //std::cout << temps << std::endl;
+    std::cout << temps << std::endl;
+    Visiteur * vis = (Visiteur *)m.tabpers[0];
+    /*std::cout << vis->gobtk << std::endl;
+    std::cout << vis->btk << std::endl;*/
     temps++;
     sleep(1);
   }
