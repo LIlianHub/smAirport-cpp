@@ -54,7 +54,8 @@ int main(int, char **) {
     for(int i=0;i<m.nbpersonne;i++){
       result=m.tabpers[i]->Action();
       if(result==1){
-        m.deletePers(m.tabpers[0]);
+        
+        m.deletePers(m.tabpers[i]);
       }
     }
       //m.tabpers[0]->deplacerPersonne(Position(0,temps));
@@ -67,8 +68,8 @@ int main(int, char **) {
 
     system("clear");
     m.AfficherMap();
-    std::cout << temps << std::endl;
-    Visiteur * vis = (Visiteur *)m.tabpers[0];
+    /*std::cout << temps << std::endl;
+    Visiteur * vis = (Visiteur *)m.tabpers[0];*/
     /*std::cout << vis->gobtk << std::endl;
     std::cout << vis->btk << std::endl;*/
     temps++;
