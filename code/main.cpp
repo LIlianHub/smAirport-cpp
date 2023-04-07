@@ -66,14 +66,14 @@ int main(int, char **) {
       //   m.deletePers(m.tabpers[0]);
       // }
 
-    system("clear");
-    m.AfficherMap();
+    //system("clear");
+    //m.AfficherMap();
     /*std::cout << temps << std::endl;
     Visiteur * vis = (Visiteur *)m.tabpers[0];*/
     /*std::cout << vis->gobtk << std::endl;
     std::cout << vis->btk << std::endl;*/
     temps++;
-    sleep(1);
+    //sleep(1);
   }
   
   

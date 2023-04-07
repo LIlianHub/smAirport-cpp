@@ -3,7 +3,7 @@ SRC+=Aeroport.cpp ZoneBagage.cpp Boutique.cpp Personne.cpp Douanier.cpp Visiteur
 EXE=SMAirport
 
 CC=g++
-CFLAGS:=-Wall -Wextra -g
+CFLAGS:=-Wall -Wextra -g 
 LDFLAGS:=-lm
 
 OBJ=$(addprefix build/,$(SRC:.cpp=.o))

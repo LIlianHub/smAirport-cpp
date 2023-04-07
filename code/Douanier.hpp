@@ -9,7 +9,7 @@
 
 class Douanier : public Personne
 {
-        bool enControle;
+        bool enControle = false;
         Visiteur * personneControle = nullptr;
         int dureeControleActu = 0;
         Visiteur * dejaControlle[50];

@@ -13,7 +13,7 @@ class Visiteur : public Personne {
     int nbBagage;
     int budget;
     int tempsAvantVol;
-    bool aDeposeBagages;
+    bool aDeposeBagages=false;
     Position posBoutiqueVoulu{-1,-1};
     Position posBagagesVoulu{-1,-1};
     Position posZEVoulu{-1,-1};

@@ -117,7 +117,7 @@ int Douanier::Action()
     {
         std::cout << "Voisin : " << voisin[i].getX() << " " << voisin[i].getY() << std::endl;
     }*/
-
+ 
     // si ila a un voisin et qu'il n'est pas en controle
     if (nbVoisin != 0 && !getEnControle())
     {
