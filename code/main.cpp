@@ -58,22 +58,14 @@ int main(int, char **) {
         m.deletePers(m.tabpers[i]);
       }
     }
-      //m.tabpers[0]->deplacerPersonne(Position(0,temps));
-      //m.tabpers[1]->deplacerPersonne(Position(1,temps));
-      //m.tabpers[1]->Action();
-      // result=m.tabpers[0]->Action();
-      // if(result==1){
-      //   m.deletePers(m.tabpers[0]);
-      // }
-
-    //system("clear");
-    //m.AfficherMap();
+    system("clear");
+    m.AfficherMap();
     /*std::cout << temps << std::endl;
     Visiteur * vis = (Visiteur *)m.tabpers[0];*/
     /*std::cout << vis->gobtk << std::endl;
     std::cout << vis->btk << std::endl;*/
     temps++;
-    //sleep(1);
+    sleep(1);
   }
   
   
