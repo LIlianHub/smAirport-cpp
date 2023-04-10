@@ -15,7 +15,7 @@ Simulation de passage de douane dans un aéroport avec différents agents.
 ## Outils à approfondir par personne
 
 - BALLEJOS Lilian: **GitLabCI** (intégration continue)
-- CHARPIN Etienne: **Doxygen** (étude de la mémoire et des erreurs de contexte)
+- CHARPIN Etienne: **Valgrind** (étude de la mémoire et des erreurs de contexte)
 - DENIZOT Hugo: **Doxygen** (production de documentation)
 
 ## Travail à faire
