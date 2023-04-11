@@ -70,7 +70,4 @@ int main(int, char **) {
     sleep(1);
   }
   
-  
-  
-  return 0;
 }

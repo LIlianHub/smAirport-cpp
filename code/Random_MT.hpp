@@ -1,6 +1,10 @@
 #ifndef RANDOM_MT_GUARD
 #define RANDOM_MT_GUARD
 
+/**
+ * @brief Classe permettant de générer des entiers et des réels aléatoirement.
+ * Ces méthodes sont celles du générateur de Mersenne Twister.
+ */
 class Random_MT{
 
 

@@ -1,0 +1,254 @@
+\hypertarget{classVisiteur}{}\doxysection{Visiteur Class Reference}
+\label{classVisiteur}\index{Visiteur@{Visiteur}}
+
+
+Classe représentant un visiteur de l\textquotesingle{}aéroport.  
+
+
+
+
+{\ttfamily \#include $<$Visiteur.\+hpp$>$}
+
+
+
+Inheritance diagram for Visiteur\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classVisiteur__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Visiteur\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classVisiteur__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classVisiteur_ac2a3d3965a5fd2e83ffd11443f61ba19}{get\+Bagage}} ()
+\begin{DoxyCompactList}\small\item\em Retourne le nombre de bagages du visiteur. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classVisiteur_ac82624858e87256f5305be495504c1ac}{get\+Budget}} ()
+\begin{DoxyCompactList}\small\item\em Retourne le budget du visiteur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVisiteur_a51cdb60ddbe76841d13e417d11e3f759}{set\+Budget}} (int bud)
+\begin{DoxyCompactList}\small\item\em SModifie le budget du visiteur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVisiteur_ab7d48c28e4b82f583ecd6abb271953a0}{set\+Bagage}} (int bag)
+\begin{DoxyCompactList}\small\item\em Modifie le nombre de bagages du visiteur. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVisiteur_a0e4801a6cdcde6250be3ac3829632365}{Visiteur}} (std\+::string name, std\+::string prename, int nbbag, int nbbud, int tmp)
+\begin{DoxyCompactList}\small\item\em Constructeur d\textquotesingle{}un visiteur avec toutes les données importantes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVisiteur_abe10d0df994c69ca4aa453bd0fff5a02}{Visiteur}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur par défaut d\textquotesingle{}un visiteur avec des valeurs définies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVisiteur_a5e5f7d5dd82bd2c05ba4e527a4b1a065}{Visiteur}} (\mbox{\hyperlink{classPosition}{Position}} p, int tmp)
+\begin{DoxyCompactList}\small\item\em Constructeur d\textquotesingle{}un visiteur à une position donnée avec un temps avant vol donné. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classVisiteur_a3d87d442f99d0f18404121eae1fda102}{Action}} ()
+\begin{DoxyCompactList}\small\item\em Action réalisé par un visiteur à chaque tour de la simulation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classVisiteur_a664c27c9ee6c940f8624817a50de1b35}{$\sim$\+Visiteur}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur par défaut du \mbox{\hyperlink{classVisiteur}{Visiteur}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classVisiteur_a34e08d6107ba0d280eb4c706884c7ba1}{get\+Est\+Control}} ()
+\begin{DoxyCompactList}\small\item\em Retourne si le visiteur se fait controller ou non. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classVisiteur_a77d8365a19ca26a1f3c9398a2dba087a}{set\+Est\+Control}} (bool ctrl)
+\begin{DoxyCompactList}\small\item\em Modifie la valeur du booleen indiquant si le visiteur se fait controller ou non. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classVisiteur_ac962d1ef4af71939296bb3acc0eb16b9}{btk}} = false
+\item 
+bool \mbox{\hyperlink{classVisiteur_ad63f2ed750003d006b3f8831d60a8849}{gobtk}} = false
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe représentant un visiteur de l\textquotesingle{}aéroport. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVisiteur_a0e4801a6cdcde6250be3ac3829632365}\label{classVisiteur_a0e4801a6cdcde6250be3ac3829632365}} 
+\index{Visiteur@{Visiteur}!Visiteur@{Visiteur}}
+\index{Visiteur@{Visiteur}!Visiteur@{Visiteur}}
+\doxysubsubsection{\texorpdfstring{Visiteur()}{Visiteur()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Visiteur\+::\+Visiteur (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{std\+::string}]{prename,  }\item[{int}]{nbbag,  }\item[{int}]{nbbud,  }\item[{int}]{tmp }\end{DoxyParamCaption})}
+
+
+
+Constructeur d\textquotesingle{}un visiteur avec toutes les données importantes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Nom du visiteur \\
+\hline
+{\em prename} & Prenom du visiteur. \\
+\hline
+{\em nbbag} & Le nombre de bagages du visiteur. \\
+\hline
+{\em nbbud} & Le budget du visiteur. \\
+\hline
+{\em tmp} & Le temps avant le vol. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVisiteur_abe10d0df994c69ca4aa453bd0fff5a02}\label{classVisiteur_abe10d0df994c69ca4aa453bd0fff5a02}} 
+\index{Visiteur@{Visiteur}!Visiteur@{Visiteur}}
+\index{Visiteur@{Visiteur}!Visiteur@{Visiteur}}
+\doxysubsubsection{\texorpdfstring{Visiteur()}{Visiteur()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Visiteur\+::\+Visiteur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructeur par défaut d\textquotesingle{}un visiteur avec des valeurs définies. 
+
+\mbox{\Hypertarget{classVisiteur_a5e5f7d5dd82bd2c05ba4e527a4b1a065}\label{classVisiteur_a5e5f7d5dd82bd2c05ba4e527a4b1a065}} 
+\index{Visiteur@{Visiteur}!Visiteur@{Visiteur}}
+\index{Visiteur@{Visiteur}!Visiteur@{Visiteur}}
+\doxysubsubsection{\texorpdfstring{Visiteur()}{Visiteur()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Visiteur\+::\+Visiteur (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPosition}{Position}}}]{p,  }\item[{int}]{tmp }\end{DoxyParamCaption})}
+
+
+
+Constructeur d\textquotesingle{}un visiteur à une position donnée avec un temps avant vol donné. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & \mbox{\hyperlink{classPosition}{Position}} donnée \\
+\hline
+{\em tmp} & Temps avant vol \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVisiteur_a664c27c9ee6c940f8624817a50de1b35}\label{classVisiteur_a664c27c9ee6c940f8624817a50de1b35}} 
+\index{Visiteur@{Visiteur}!````~Visiteur@{$\sim$Visiteur}}
+\index{````~Visiteur@{$\sim$Visiteur}!Visiteur@{Visiteur}}
+\doxysubsubsection{\texorpdfstring{$\sim$Visiteur()}{~Visiteur()}}
+{\footnotesize\ttfamily Visiteur\+::$\sim$\+Visiteur (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructeur par défaut du \mbox{\hyperlink{classVisiteur}{Visiteur}}. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classVisiteur_a3d87d442f99d0f18404121eae1fda102}\label{classVisiteur_a3d87d442f99d0f18404121eae1fda102}} 
+\index{Visiteur@{Visiteur}!Action@{Action}}
+\index{Action@{Action}!Visiteur@{Visiteur}}
+\doxysubsubsection{\texorpdfstring{Action()}{Action()}}
+{\footnotesize\ttfamily int Visiteur\+::\+Action (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Action réalisé par un visiteur à chaque tour de la simulation. 
+
+\begin{DoxyReturn}{Returns}
+1 si il est arrivé au vol, 0 sinon. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classPersonne_adc119471797186bc011327e742ca799e}{Personne}}.
+
+\mbox{\Hypertarget{classVisiteur_ac2a3d3965a5fd2e83ffd11443f61ba19}\label{classVisiteur_ac2a3d3965a5fd2e83ffd11443f61ba19}} 
+\index{Visiteur@{Visiteur}!getBagage@{getBagage}}
+\index{getBagage@{getBagage}!Visiteur@{Visiteur}}
+\doxysubsubsection{\texorpdfstring{getBagage()}{getBagage()}}
+{\footnotesize\ttfamily int Visiteur\+::get\+Bagage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retourne le nombre de bagages du visiteur. 
+
+\begin{DoxyReturn}{Returns}
+Le nombre de bagage. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVisiteur_ac82624858e87256f5305be495504c1ac}\label{classVisiteur_ac82624858e87256f5305be495504c1ac}} 
+\index{Visiteur@{Visiteur}!getBudget@{getBudget}}
+\index{getBudget@{getBudget}!Visiteur@{Visiteur}}
+\doxysubsubsection{\texorpdfstring{getBudget()}{getBudget()}}
+{\footnotesize\ttfamily int Visiteur\+::get\+Budget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retourne le budget du visiteur. 
+
+\begin{DoxyReturn}{Returns}
+Le budget du visiteur. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVisiteur_a34e08d6107ba0d280eb4c706884c7ba1}\label{classVisiteur_a34e08d6107ba0d280eb4c706884c7ba1}} 
+\index{Visiteur@{Visiteur}!getEstControl@{getEstControl}}
+\index{getEstControl@{getEstControl}!Visiteur@{Visiteur}}
+\doxysubsubsection{\texorpdfstring{getEstControl()}{getEstControl()}}
+{\footnotesize\ttfamily bool Visiteur\+::get\+Est\+Control (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retourne si le visiteur se fait controller ou non. 
+
+\begin{DoxyReturn}{Returns}
+true Si le visiteur est en train de se faire controller. 
+
+false Si le visiteur n\textquotesingle{}est pas en train de se faire controller. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVisiteur_ab7d48c28e4b82f583ecd6abb271953a0}\label{classVisiteur_ab7d48c28e4b82f583ecd6abb271953a0}} 
+\index{Visiteur@{Visiteur}!setBagage@{setBagage}}
+\index{setBagage@{setBagage}!Visiteur@{Visiteur}}
+\doxysubsubsection{\texorpdfstring{setBagage()}{setBagage()}}
+{\footnotesize\ttfamily void Visiteur\+::set\+Bagage (\begin{DoxyParamCaption}\item[{int}]{bag }\end{DoxyParamCaption})}
+
+
+
+Modifie le nombre de bagages du visiteur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bag} & Nouveau nombre de bagages du visiteur. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVisiteur_a51cdb60ddbe76841d13e417d11e3f759}\label{classVisiteur_a51cdb60ddbe76841d13e417d11e3f759}} 
+\index{Visiteur@{Visiteur}!setBudget@{setBudget}}
+\index{setBudget@{setBudget}!Visiteur@{Visiteur}}
+\doxysubsubsection{\texorpdfstring{setBudget()}{setBudget()}}
+{\footnotesize\ttfamily void Visiteur\+::set\+Budget (\begin{DoxyParamCaption}\item[{int}]{bud }\end{DoxyParamCaption})}
+
+
+
+SModifie le budget du visiteur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bud} & Nouveau budget du visiteur. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVisiteur_a77d8365a19ca26a1f3c9398a2dba087a}\label{classVisiteur_a77d8365a19ca26a1f3c9398a2dba087a}} 
+\index{Visiteur@{Visiteur}!setEstControl@{setEstControl}}
+\index{setEstControl@{setEstControl}!Visiteur@{Visiteur}}
+\doxysubsubsection{\texorpdfstring{setEstControl()}{setEstControl()}}
+{\footnotesize\ttfamily void Visiteur\+::set\+Est\+Control (\begin{DoxyParamCaption}\item[{bool}]{ctrl }\end{DoxyParamCaption})}
+
+
+
+Modifie la valeur du booleen indiquant si le visiteur se fait controller ou non. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ctrl} & Nouvelle valeur du booleen. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classVisiteur_ac962d1ef4af71939296bb3acc0eb16b9}\label{classVisiteur_ac962d1ef4af71939296bb3acc0eb16b9}} 
+\index{Visiteur@{Visiteur}!btk@{btk}}
+\index{btk@{btk}!Visiteur@{Visiteur}}
+\doxysubsubsection{\texorpdfstring{btk}{btk}}
+{\footnotesize\ttfamily bool Visiteur\+::btk = false}
+
+\mbox{\Hypertarget{classVisiteur_ad63f2ed750003d006b3f8831d60a8849}\label{classVisiteur_ad63f2ed750003d006b3f8831d60a8849}} 
+\index{Visiteur@{Visiteur}!gobtk@{gobtk}}
+\index{gobtk@{gobtk}!Visiteur@{Visiteur}}
+\doxysubsubsection{\texorpdfstring{gobtk}{gobtk}}
+{\footnotesize\ttfamily bool Visiteur\+::gobtk = false}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Visiteur_8hpp}{Visiteur.\+hpp}}\item 
+\mbox{\hyperlink{Visiteur_8cpp}{Visiteur.\+cpp}}\end{DoxyCompactItemize}

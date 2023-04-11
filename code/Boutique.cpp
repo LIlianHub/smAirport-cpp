@@ -17,12 +17,12 @@ string Boutique::getnomBoutique()
     return nomBoutique;
 }
 
-Boutique::Boutique(int nbPersonne, string nom,Position p) : nombrePersonneMax(nbPersonne), nomBoutique(nom), nombrePersonneActuel(0)
+Boutique::Boutique(int nbPersonne, string nom, Position p) : nombrePersonneMax(nbPersonne), nomBoutique(nom), nombrePersonneActuel(0)
 {
     m.grille[p.getX()][p.getY()] = 3;
-        m.tabZone[m.nbzonne] = this;
-        m.nbzonne++;
-    pos=p;
+    m.tabZone[m.nbzonne] = this;
+    m.nbzonne++;
+    pos = p;
 }
 
 Boutique::Boutique()
