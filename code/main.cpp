@@ -50,7 +50,7 @@ int main(int, char **) {
 
   while (temps < 70)
   {
-    //persd.getVoisin(test, info);
+    
     for(int i=0;i<m.nbpersonne;i++){
       result=m.tabpers[i]->Action();
       if(result==1){
@@ -58,16 +58,13 @@ int main(int, char **) {
         m.deletePers(m.tabpers[i]);
       }
     }
-    //system("clear");
+    system("clear");
     m.AfficherMap();
-    /*std::cout << temps << std::endl;
-    Visiteur * vis = (Visiteur *)m.tabpers[0];*/
-    std::cout << "Nombre total de visiteur : 11456 "<< std::endl;
-    std::cout << "Nombre total de controle : 4587 "<< std::endl;
-    std::cout << "Nombre total d'avions raté : 354"<< std::endl;
-    std::cout << "Nombre total d'avions raté à cause d'un controle : 41 "<< std::endl;
+
     temps++;
     sleep(1);
   }
+
+  return 0;
   
 }
