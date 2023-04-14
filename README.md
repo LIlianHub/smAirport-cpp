@@ -24,7 +24,7 @@ Simulation de passage de douane dans un aéroport avec différents agents.
 
 - [X] Coder le projet
 
-- [ ] Dossier de rendu de projet (Rendu 2)
+- [X] Dossier de rendu de projet (Rendu 2)
 
 
 
